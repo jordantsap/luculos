@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-  
+
     /**
      * Instantiate a new controller instance.
      *

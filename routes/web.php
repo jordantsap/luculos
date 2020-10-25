@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers;
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 
@@ -11,22 +11,36 @@ Route::get('/', function () {
       return view('dashboard');
   })->name('dashboard');
 
-Route::prefix('admin')->group(function () {
 
-  Route::resource('pages', PageController::class);
-  Route::resource('products', ProductController::class);
-  Route::resource('categories', CategoryController::class);
+  Route::middleware('auth')->prefix('admin')->group(function () {
 
-});
+    Route::resource('pages', PageController::class);
+    Route::resource('products', ProductController::class);
+    Route::resource('categories', CategoryController::class);
 
-/*
-* Routes that serve the frontend and what the end user sees
-*/
+  });
 
-Route::get('products', [FrontPageController::class, 'productsIndex']);
 
-Route::get('products/{product}', [FrontPageController::class, 'productShow']);
+  /*
+  * Routes that serve the frontend and what the end user sees
+  */
+  // keep it rsourcefull for now, it just works
 
-Route::get('categories', [FrontPageController::class, 'categoriesIndex']);
+  Route::resource('food', 'FoodController',
+                ['only' => ['index', 'show']]);
 
-Route::get('category/{category}', [FrontPageController::class, 'categoryShow']);
+  Route::get('premium-quality-products', PremiumController::class);
+  //
+  Route::get('bioproduct', BioProductController::class);
+
+  Route::resource('product-types', 'TypeController',
+                ['only' => ['index', 'show']]);
+
+  // Route::get('type', 'TypeController',
+  //               ['only' => ['premium', 'bioproduct']]);
+
+
+
+// Route::group(['prefix' => 'admin'], function () {
+//     Voyager::routes();
+// });

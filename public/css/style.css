@@ -13,6 +13,9 @@ html {
     max-width: 1373px;
     margin: auto;
 }
+#top-header, #et-secondary-nav li ul {
+    background-color: rgba(4,104,67,0.61);
+}
 #top-header {
     background-color: #2ea3f2;
     -webkit-transition: background-color 0.4s, transform 0.4s,
@@ -32,6 +35,20 @@ html {
 #main-footer {
     background-color: #405d6b;
 }
+
+h3.category-name, h3.category-name:hover{
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 0;
+    color: black !important;
+    text-decoration: none !important;
+    line-height: 18px;
+    text-transform: none;
+    letter-spacing: initial;
+    clear: none;
+    margin: 0;
+}
+
 #footer-bottom {
     background-color: rgba(10, 10, 10, 0.32);
     padding: 15px 0 5px;

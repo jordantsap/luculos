@@ -1,32 +1,42 @@
-@extends('layouts.user')
+@extends('layouts.public')
 
 
 @section('content')
 
-  <div class="container">
-    <div class="row">
 
-        <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Image</th>
-          <th scope="col">Title</th>
-          <th scope="col">Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          @foreach ($cats as $cat)
-            <th scope="row"> {{$cat->id}}</th>
-            <td>{{$cat->image}}</td>
-            <td> <a href="{{route('categories.show', $cat->id )}}">{{$cat->title}}</a> </td>
-            <td> {{ $cat->description ? : '-'}}</td>
-          </tr>
-          @endforeach
-      </tbody>
-      </table>
+                <div class="col-sm-3">
+                  <img width="100%" src="{{asset('images/best-price.jpg')}}" alt="">
+                </div>
 
-    </div>
-  </div>
+
+                <div class="row col-sm-9 border">
+
+                  @foreach ($cats as $cat)
+                    <div class="col-sm-2">
+                       <a href="{{route('product-types.show', $cat->slug)}}">
+                    <img src="{{ asset('images/' . $cat->image) ? : asset('images.Noimage.jpg')}}" width="100%" height="150px" alt="{{$cat->title}}">
+                    <h3 class="category-name"> {{$cat->title}} </h3>
+                    </a>
+                  </div>
+                  @endforeach
+
+
+                @if(count($food) > 0)
+                @foreach ($food as $product)
+                  <div class="col-sm-2">
+                     <a href="{{route('food.show', $product->slug)}}">
+                  <img src="{{ asset('images/' . $product->image) ? : asset('images.Noimage.jpg')}}" width="100%" height="150px" alt="{{$product->title}}">
+                  <h3 class="product-name"> {{$product->title}} </h3>
+                  </a>
+                </div>
+                @endforeach
+              @else
+                <div class="col-sm-12">
+                  <p class="text-center">No published products</p>
+                </div>
+
+              @endif
+            </div>
+
+
 @endsection

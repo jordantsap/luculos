@@ -17,6 +17,7 @@ class CreateCategoriesTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('slug');
+            $table->foreignId('type_id');
             $table->string('description');
             $table->string('image');
             // $table->timestamps();

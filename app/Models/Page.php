@@ -21,6 +21,17 @@ class Page extends Model
         'image',
     ];
 
+
+    /**
+     * Get the route key for the model.
+     *
+     * @return string
+     */
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
+
     /**
      * Get all of the images for the page.
      */
