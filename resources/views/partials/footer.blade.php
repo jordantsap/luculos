@@ -32,7 +32,7 @@
                 </li>
 
               </ul>
-              <p id="footer-info">Designed by <a href="https://www.facebook.com/CB.GrX" title="C.B. Graphix &amp; Design">C.B. Graphix &amp; Design</a> | Powered by <a href="http://www.luculos.com">Luculos.com</a></p>
+              <p id="footer-info">Designed by <a href="https://www.facebook.com/CB.GrX" target="_blank" title="C.B. Graphix &amp; Design">C.B. Graphix &amp; Design</a> | Powered by <a href="http://www.luculos.com">Luculos.com</a></p>
             </div> <!-- .container -->
           </div>
         </footer>

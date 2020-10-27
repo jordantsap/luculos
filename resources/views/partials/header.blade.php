@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="mx-auto">
-                <a href="{{ url('/') }}">
+                <a href="{{ route('homepage') }}">
                     <img src="{{ asset('images/logo.png') }}" width="371" height="143" alt="Luculos foods"></a>
             </div>
         </div>
@@ -14,25 +14,25 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Our Mission <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#"> {{__('page.ourmission')}} <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{route('food.index')}}">Products</a>
+                            <a class="nav-link" href="{{route('products.index')}}"> {{__('page.products')}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url('premium-quality-products')}}">Premium Quality</a>
+                            <a class="nav-link" href="{{ route('types.premium', 'premium-quality')}}">{{__('page.premiumquality')}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url('bioproduct')}}">Bio Products</a>
+                            <a class="nav-link" href="{{ route('types.bioproducts', 'bioproducts')}}">{{__('page.bioproducts')}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Price List</a>
+                            <a class="nav-link" href="#"> {{__('page.pricelist')}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#"> {{__('page.contact')}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">News</a>
+                            <a class="nav-link" href="#"> {{__('page.news')}}</a>
                         </li>
 
 

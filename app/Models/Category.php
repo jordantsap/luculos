@@ -22,16 +22,10 @@ class Category extends Model
         'image',
     ];
 
-      /**
-       * Get the route key for the model.
-       *
-       * @return string
-       */
-      public function getRouteKeyName()
-      {
-          return 'slug';
-      }
-
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 
     /**
      * Get the products for the category.
@@ -42,14 +36,21 @@ class Category extends Model
     }
 
     /**
-     * Scope a query to only include active users.
+     * Get the post that owns the comment.
+     */
+    public function type()
+    {
+        return $this->belongsTo('App\Models\Type');
+    }
+
+    /**
+     * Scope a query to only include premium categories.
      *
      * @param  \Illuminate\Database\Eloquent\Builder  $query
      * @return \Illuminate\Database\Eloquent\Builder
      */
     public function scopePremium($query)
     {
-        return $query->where('parent', 2);
+        return $query->where('type_id', 2);
     }
-
 }

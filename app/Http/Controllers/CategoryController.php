@@ -7,18 +7,6 @@ use Illuminate\Http\Request;
 
 class CategoryController extends Controller
 {
-
-
-    /**
-     * Instantiate a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        // $this->middleware('auth');
-    }
-
     /**
      * Display a listing of the resource.
      *
@@ -26,9 +14,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        $cats = \DB::table('categories')->get();
-
-        return view('auth.categories.index', compact('cats'));
+        return view('categories.index');
     }
 
     /**
@@ -38,7 +24,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        //
+        return view('categories.create');
     }
 
     /**
@@ -60,7 +46,9 @@ class CategoryController extends Controller
      */
     public function show(Category $category)
     {
-        return view('auth.categories.show', compact($category->id));
+       $cat = Category::find($category->id);
+      // dd($cat);
+        return view('categories.show', compact('cat'));
     }
 
     /**
@@ -71,7 +59,7 @@ class CategoryController extends Controller
      */
     public function edit(Category $category)
     {
-        //
+        return view('categories.edit');
     }
 
     /**

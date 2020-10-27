@@ -7,17 +7,6 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
-
-  /**
-   * Instantiate a new controller instance.
-   *
-   * @return void
-   */
-  public function __construct()
-  {
-      $this->middleware('auth');
-  }
-
     /**
      * Display a listing of the resource.
      *
@@ -25,7 +14,7 @@ class PageController extends Controller
      */
     public function index()
     {
-        return view('auth.pages.index');
+        //
     }
 
     /**
@@ -35,7 +24,7 @@ class PageController extends Controller
      */
     public function create()
     {
-        return view('auth.pages.create');
+        //
     }
 
     /**
@@ -57,7 +46,7 @@ class PageController extends Controller
      */
     public function show(Page $page)
     {
-        return view('auth.pages.show');
+        //
     }
 
     /**
@@ -68,7 +57,7 @@ class PageController extends Controller
      */
     public function edit(Page $page)
     {
-        return view('auth.pages.edit');
+        //
     }
 
     /**

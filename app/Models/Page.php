@@ -4,39 +4,21 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
+use Astrotomic\Translatable\Translatable;
 
 class Page extends Model
 {
-    use HasFactory;
+    use HasFactory, Translatable;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = [
-        'title',
-        'slug',
-        'description',
-        'image',
+    public $translatedAttributes =
+    [
+      'title',
+      'slug',
+      'description'
     ];
 
-
-    /**
-     * Get the route key for the model.
-     *
-     * @return string
-     */
-    public function getRouteKeyName()
-    {
-        return 'slug';
-    }
-
-    /**
-     * Get all of the images for the page.
-     */
-    public function images()
-    {
-        return $this->morphToMany('App\Models\Image', 'imageable');
-    }
+    protected $fillable = [
+      'image',
+    ];
 }

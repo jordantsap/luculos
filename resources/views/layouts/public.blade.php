@@ -21,8 +21,6 @@
 
         @stack('modals')
 
-        @livewireScripts
-
 
                 <footer class="w-90" id="main-footer">
 

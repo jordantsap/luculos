@@ -7,7 +7,6 @@ html {
     background-size: cover;
     /* min-height: 100vh; */
 }
-
 #main-container {
     width: 90%;
     max-width: 1373px;
@@ -26,6 +25,7 @@ html {
 }
 #top-header > a{
   color: #ffffff !important;
+  padding-top:5px;
 }
 #header-container {
     -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
@@ -36,7 +36,7 @@ html {
     background-color: #405d6b;
 }
 
-h3.category-name, h3.category-name:hover{
+h2.category-name, h2.category-name:hover{
     font-size: 20px;
     text-align: center;
     padding: 5px 0;

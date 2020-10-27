@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
+use DB;
 
 class TypeSeeder extends Seeder
 {
@@ -15,25 +15,24 @@ class TypeSeeder extends Seeder
     public function run()
     {
       DB::table('types')->insert([
-          'title' => 'Plain',
-          'slug' => 'plain',
-          'description' => '',
-          'image' => 'Noimage.jpg',
-      ]);
-
-      DB::table('types')->insert([
-        'title' => 'Premium',
-        'slug' => 'premium',
+        'title' => 'Plain',
+        'slug' => 'plain',
         'description' => '',
-        'image' => 'premium.png',
-      ]);
+        'image' => 'Noimage.jpg',
+    ]);
 
-      DB::table('types')->insert([
-          'title' => 'Bioproduct',
-          'slug' => 'bioproduct',
-          'description' => '',
-          'image' => 'bio.png',
-      ]);
+    DB::table('types')->insert([
+      'title' => 'Premium Quality',
+      'slug' => 'premium-quality',
+      'description' => '',
+      'image' => 'premium.png',
+    ]);
 
+    DB::table('types')->insert([
+        'title' => 'Bio Products',
+        'slug' => 'bioproductS',
+        'description' => '',
+        'image' => 'bio.png',
+    ]);
     }
 }
