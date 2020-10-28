@@ -3,184 +3,451 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
-
+// use Illuminate\Support\Facades\DB;
+use App\Models\Category;
+use DB;
 class CategorySeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
     public function run()
     {
+      $category = new Category;
 
-    DB::table('categories')->insert([
-        'title' => 'Wine',
-        'slug' => 'wine',
-        'type_id' => 1,
-        'description' => '',
-        'image' => 'wine.jpg',
-    ]);
+      app()->setLocale('en');
 
-    DB::table('categories')->insert([
-        'title' => 'Bio Wine',
-        'slug' => 'bio-wine',
-        'type_id' => 3,
-        'description' => '',
-        'image' => 'bio-wine.jpg',
-    ]);
+      $category->title = 'Wine';
+      $category->slug = 'wine';
+      $category->image = 'wine.jpg';
+      $category->description = '';
+      $category->type_id = 1;
+      $category->save();
 
-    DB::table('categories')->insert([
-        'title' => 'Olive Oil',
-        'slug' => 'olive-oil',
-        'type_id' => 1,
-        'description' => '',
-        'image' => 'olive_oil__.jpg',
-    ]);
+      app()->setLocale('el');
 
-    DB::table('categories')->insert([
-        'title' => 'Sauses',
-        'slug' => 'sauses',
-        'type_id' => 1,
-        'description' => '',
-        'image' => 'sauces.png',
-    ]);
+      $category->title = 'Κρασί';
+      $category->slug = 'krasi';
+      $category->image = 'wine.jpg';
+      $category->description = '';
+      $category->type_id = 1;
+      $category->save();
+      //--------- κρασι τελος---------------
 
-    DB::table('categories')->insert([
-        'title' => 'Greek Pasta',
-        'slug' => 'greek-pasta',
-        'type_id' => 1,
-        'description' => '',
-        'image' => 'greek-pasta.jpg',
-    ]);
+      $category = new Category;
 
-    DB::table('categories')->insert([
-        'title' => 'Diary',
-        'slug' => 'diary',
-        'description' => '',
-        'type_id' => 1,
-        'image' => 'diary.jpg',
-    ]);
-    // stopped here
-    DB::table('categories')->insert([
-        'title' => 'Olives',
-        'slug' => 'olives',
-        'type_id' => 1,
-        'description' => '',
-        'image' => 'olives.jpg',
-    ]);
+      app()->setLocale('en');
 
-    DB::table('categories')->insert([
-        'title' => 'Honey',
-        'slug' => 'honey',
-        'type_id' => 1,
-        'description' => '',
-        'image' => 'honey.jpg',
-    ]);
+      $category->title = 'Sauses';
+      $category->slug = 'sauses';
+      $category->image = 'sauses2.png';
+      $category->description = '';
+      $category->type_id = 1;
+      $category->save();
 
-    DB::table('categories')->insert([
-        'title' => 'Bio Diary',
-        'slug' => 'bio-diary',
-        'type_id' => 3,
-        'description' => '',
-        'image' => 'bio-diary.jpg',
-    ]);
+      app()->setLocale('el');
 
-    DB::table('categories')->insert([
-        'title' => 'Bio Olive Oil',
-        'slug' => 'bio-olive-oil',
-        'type_id' => 3,
-        'description' => '',
-        'image' => 'bio-olive_oil.jpg',
-    ]);
+      $category->title = 'Σάλτες';
+      $category->slug = 'saltses';
+      $category->image = 'sauses2.png';
+      $category->description = '';
+      $category->type_id = 1;
+      $category->save();
+      //-------------------saltes telos
 
-    DB::table('categories')->insert([
-        'title' => 'Bio Olives',
-        'slug' => 'bio-olives',
-        'type_id' => 3,
-        'description' => '',
-        'image' => 'bio-olives.jpg',
-    ]);
+      $category = new Category;
 
-    DB::table('categories')->insert([
-        'title' => 'Bio Honey',
-        'slug' => 'bio-honey',
-        'type_id' => 3,
-        'description' => '',
-        'image' => 'bio-honey.jpg',
-    ]);
+      app()->setLocale('en');
 
-    DB::table('categories')->insert([
-        'title' => 'Bio Greek Pasta',
-        'slug' => 'bio-greek-pasta',
-        'type_id' => 3,
-        'description' => '',
-        'image' => 'bio-greek-pasta.jpg',
-    ]);
+      $category->title = 'Olive Oil';
+      $category->slug = 'olive-oil';
+      $category->image = 'olive_oil__.jpg';
+      $category->description = '';
+      $category->type_id = 1;
+      $category->save();
 
-    DB::table('categories')->insert([
-        'title' => 'Bio Sauses',
-        'slug' => 'bio-sauses',
-        'type_id' => 3,
-        'description' => '',
-        'image' => 'biosauses.jpg',
-    ]);
+      app()->setLocale('el');
 
-    DB::table('categories')->insert([
-        'title' => 'Premium Olive Oil',
-        'slug' => 'premium-olive-oil',
-        'type_id' => 2,
-        'description' => '',
-        'image' => 'premiumoliveoil.jpg',
-    ]);
+      $category->title = 'Ελαιόλαδο';
+      $category->slug = 'elaiolado';
+      $category->image = 'olive_oil__.jpg';
+      $category->description = '';
+      $category->type_id = 1;
+      $category->save();
+      //-----------elaiolado telos
 
-    DB::table('categories')->insert([
-        'title' => 'Premium Diary',
-        'slug' => 'premium-diary',
-        'type_id' => 2,
-        'description' => '',
-        'image' => 'premium-diary.jpg',
-    ]);
+    $category = new Category;
 
-    DB::table('categories')->insert([
-        'title' => 'Premium Olives',
-        'slug' => 'premium-olives',
-        'type_id' => 2,
-        'description' => '',
-        'image' => 'premiumolives.jpg',
-    ]);
+    app()->setLocale('en');
 
-    DB::table('categories')->insert([
-        'title' => 'Premium Honey',
-        'slug' => 'premium-honey',
-        'type_id' => 2,
-        'description' => '',
-        'image' => 'premium-honey.jpg',
-    ]);
+    $category->title = 'Greek Pasta';
+    $category->slug = 'greek-pasta';
+    $category->image = 'greek-pasta.jpg';
+    $category->description = '';
+    $category->type_id = 1;
+    $category->save();
 
-    DB::table('categories')->insert([
-        'title' => 'Premium Wine',
-        'slug' => 'premium-wine',
-        'type_id' => 2,
-        'description' => '',
-        'image' => 'premiumwine.jpg',
-    ]);
+    app()->setLocale('el');
 
-    DB::table('categories')->insert([
-        'title' => 'Premium Sauses',
-        'slug' => 'premium-sauses',
-        'type_id' => 2,
-        'description' => '',
-        'image' => 'premiumsauses.jpg',
-    ]);
+    $category->title = 'Μακαρόνια';
+    $category->slug = 'makaronia';
+    $category->image = 'greek-pasta.jpg';
+    $category->description = '';
+    $category->type_id = 1;
+    $category->save();
+      // -----------------makaronia trelos
 
-    DB::table('categories')->insert([
-        'title' => 'Premium Greek Pasta',
-        'slug' => 'premium-greek-pasta',
-        'type_id' => 2,
-        'description' => '',
-        'image' => 'premium-greek-pasta.jpg',
-    ]);
+    $category = new Category;
+
+    app()->setLocale('en');
+
+    $category->title = 'Diary';
+    $category->slug = 'diary';
+    $category->image = 'diary.jpg';
+    $category->description = '';
+    $category->type_id = 1;
+    $category->save();
+
+    app()->setLocale('el');
+
+    $category->title = 'Τυροκομικά';
+    $category->slug = 'tirokomika';
+    $category->image = 'diary.jpg';
+    $category->description = '';
+    $category->type_id = 1;
+    $category->save();
+    // -------tyria telos
+
+    $category = new Category;
+
+    app()->setLocale('en');
+
+    $category->title = 'Olives';
+    $category->slug = 'olives';
+    $category->image = 'olives.jpg';
+    $category->description = '';
+    $category->type_id = 1;
+    $category->save();
+
+    app()->setLocale('el');
+
+    $category->title = 'Ελιές';
+    $category->slug = 'elies';
+    $category->image = 'olives.jpg';
+    $category->description = '';
+    $category->type_id = 1;
+    $category->save();
+    // elies telos---------
+
+    $category = new Category;
+
+    app()->setLocale('en');
+
+    $category->title = 'Honey';
+    $category->slug = 'honey';
+    $category->image = 'honey.jpg';
+    $category->description = '';
+    $category->type_id = 1;
+    $category->save();
+
+    app()->setLocale('el');
+
+    $category->title = 'Μέλι';
+    $category->slug = 'meli';
+    $category->image = 'honey.jpg';
+    $category->description = '';
+    $category->type_id = 1;
+    $category->save();
+    //----meli telos-------
+
+    $category = new Category;
+
+    app()->setLocale('en');
+
+    $category->title = 'Bio Wine';
+    $category->slug = 'bio-wine';
+    $category->image = 'bio-wine.jpg';
+    $category->description = '';
+    $category->type_id = 3;
+    $category->save();
+
+    app()->setLocale('el');
+
+    $category->title = 'Βιολογικό Κρασί';
+    $category->slug = 'viologiko-krasi';
+    $category->image = 'bio-wine.jpg';
+    $category->description = '';
+    $category->type_id = 3;
+    $category->save();
+    // telos--------
+
+        $category = new Category;
+
+        app()->setLocale('en');
+
+        $category->title = 'Bio Diary';
+        $category->slug = 'bio-diary';
+        $category->image = 'bio-diary.jpg';
+        $category->description = '';
+        $category->type_id = 3;
+        $category->save();
+
+        app()->setLocale('el');
+
+        $category->title = 'Βιολογικό Τυρί';
+        $category->slug = 'viologiko-tyri';
+        $category->image = 'bio-diary.jpg';
+        $category->description = '';
+        $category->type_id = 3;
+        $category->save();
+        // telos to tyri
+
+    $category = new Category;
+
+    app()->setLocale('en');
+
+    $category->title = 'Bio Olive Oil';
+    $category->slug = 'bio-olive-oil';
+    $category->image = 'bio-olive_oil.jpg';
+    $category->description = '';
+    $category->type_id = 3;
+    $category->save();
+
+    app()->setLocale('el');
+
+    $category->title = 'Βιολογικό Ελαιόλαδο';
+    $category->slug = 'viologiko-elaiolado';
+    $category->image = 'bio-olive_oil.jpg';
+    $category->description = '';
+    $category->type_id = 3;
+    $category->save();
+    // telos to elaiolado
+
+        $category = new Category;
+
+        app()->setLocale('en');
+
+        $category->title = 'Bio Olives';
+        $category->slug = 'bio-olives';
+        $category->image = 'bio-olives.jpg';
+        $category->description = '';
+        $category->type_id = 3;
+        $category->save();
+
+        app()->setLocale('el');
+
+        $category->title = 'Βιολογικές Ελιές';
+        $category->slug = 'viologikes-elies';
+        $category->image = 'bio-olives.jpg';
+        $category->description = '';
+        $category->type_id = 3;
+        $category->save();
+        // telos kai oi elies
+
+    $category = new Category;
+
+    app()->setLocale('en');
+
+    $category->title = 'Bio Honey';
+    $category->slug = 'bio-honey';
+    $category->image = 'bio-honey.jpg';
+    $category->description = '';
+    $category->type_id = 3;
+    $category->save();
+
+    app()->setLocale('el');
+
+    $category->title = 'Βιολογικό Μέλι';
+    $category->slug = 'viologiko-meli';
+    $category->image = 'bio-olives.jpg';
+    $category->description = '';
+    $category->type_id = 3;
+    $category->save();
+    // telos to meli---------------------------------
+
+    $category = new Category;
+
+    app()->setLocale('en');
+
+    $category->title = 'Bio Greek Pasta';
+    $category->slug = 'bio-greek-pasta';
+    $category->image = 'bio-greek-pasta.jpg';
+    $category->description = '';
+    $category->type_id = 3;
+    $category->save();
+
+    app()->setLocale('el');
+
+    $category->title = 'Βιολογικά Μακαρόνια';
+    $category->slug = 'viologiko-makaroni';
+    $category->image = 'bio-greek-pasta.jpg';
+    $category->description = '';
+    $category->type_id = 3;
+    $category->save();
+    //////////----telos to makaroni
+
+    $category = new Category;
+
+    app()->setLocale('en');
+
+    $category->title = 'Bio Sauses';
+    $category->slug = 'bio-sauses';
+    $category->image = 'biosauses.jpg';
+    $category->description = '';
+    $category->type_id = 3;
+    $category->save();
+
+    app()->setLocale('el');
+
+    $category->title = 'Βιολογικές Σάλτες';
+    $category->slug = 'viologikes-saltes';
+    $category->image = 'biosauses.jpg';
+    $category->description = '';
+    $category->type_id = 3;
+    $category->save();
+    //////////----telos oi saltses
+
+        $category = new Category;
+
+        app()->setLocale('en');
+
+        $category->title = 'Premium Olive Oil';
+        $category->slug = 'premium-olive-oil';
+        $category->image = 'premiumoliveoil.jpg';
+        $category->description = '';
+        $category->type_id = 2;
+        $category->save();
+
+        app()->setLocale('el');
+
+        $category->title = 'Εξαιρετικής πoιότητας ελαιόλαδο';
+        $category->slug = 'eksairetikis-poiotitas-elaiolado';
+        $category->image = 'premiumoliveoil.jpg';
+        $category->description = '';
+        $category->type_id = 2;
+        $category->save();
+        //////////----telos to elaiolado
+
+    $category = new Category;
+
+    app()->setLocale('en');
+
+    $category->title = 'Premium Diary';
+    $category->slug = 'premium-diary';
+    $category->image = 'premium-diary.jpg';
+    $category->description = '';
+    $category->type_id = 2;
+    $category->save();
+
+    app()->setLocale('el');
+
+    $category->title = 'Εξαιρετικής πoιότητας Τυροκομικά';
+    $category->slug = 'eksairetikis-poiotitas-tirokomika';
+    $category->image = 'premium-diary.jpg';
+    $category->description = '';
+    $category->type_id = 2;
+    $category->save();
+    //---terlos to tiri----------
+
+    $category = new Category;
+
+    app()->setLocale('en');
+
+    $category->title = 'Premium Olives';
+    $category->slug = 'premium-olives';
+    $category->image = 'premium-olives.jpg';
+    $category->description = '';
+    $category->type_id = 2;
+    $category->save();
+
+    app()->setLocale('el');
+
+    $category->title = 'Εξαιρετικής πoιότητας Ελιές';
+    $category->slug = 'eksairetikis-poiotitas-elies';
+    $category->image = 'premium-olives.jpg';
+    $category->description = '';
+    $category->type_id = 2;
+    $category->save();
+    //--------telos to elies
+
+    $category = new Category;
+
+    app()->setLocale('en');
+
+    $category->title = 'Premium Honey';
+    $category->slug = 'premium-honey';
+    $category->image = 'premium-honey.jpg';
+    $category->description = '';
+    $category->type_id = 2;
+    $category->save();
+
+    app()->setLocale('el');
+
+    $category->title = 'Εξαιρετικής πoιότητας Μέλι';
+    $category->slug = 'eksairetikis-poiotitas-meli';
+    $category->image = 'premium-honey.jpg';
+    $category->description = '';
+    $category->type_id = 2;
+    $category->save();
+    //--------telos to elies
+
+    $category = new Category;
+
+    app()->setLocale('en');
+
+    $category->title = 'Premium Wine';
+    $category->slug = 'premium-wine';
+    $category->image = 'premium-wine.jpg';
+    $category->description = '';
+    $category->type_id = 2;
+    $category->save();
+
+    app()->setLocale('el');
+
+    $category->title = 'Εξαιρετικής πoιότητας Κρασί';
+    $category->slug = 'eksairetikis-poiotitas-krasi';
+    $category->image = 'premium-wine.jpg';
+    $category->description = '';
+    $category->type_id = 2;
+    $category->save();
+    //--------telos to krasi
+
+    $category = new Category;
+
+    app()->setLocale('en');
+
+    $category->title = 'Premium Sauses';
+    $category->slug = 'premium-sauses';
+    $category->image = 'premium-sauses.jpg';
+    $category->description = '';
+    $category->type_id = 2;
+    $category->save();
+
+    app()->setLocale('el');
+
+    $category->title = 'Εξαιρετικής πoιότητας Σάλτσες';
+    $category->slug = 'eksairetikis-poiotitas-saltses';
+    $category->image = 'premium-sauses.jpg';
+    $category->description = '';
+    $category->type_id = 2;
+    $category->save();
+    //--------telos to krasi
+
+    $category = new Category;
+
+    app()->setLocale('en');
+
+    $category->title = 'Premium Greek Pasta';
+    $category->slug = 'premium-greek-pasta';
+    $category->image = 'premium-greek-pasta.jpg';
+    $category->description = '';
+    $category->type_id = 2;
+    $category->save();
+
+    app()->setLocale('el');
+
+    $category->title = 'Εξαιρετικής πoιότητας Μακαρόνια';
+    $category->slug = 'eksairetikis-poiotitas-makaroni';
+    $category->image = 'premium-greek-pasta.jpg';
+    $category->description = '';
+    $category->type_id = 2;
+    $category->save();
     }
 }

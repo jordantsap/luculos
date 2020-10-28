@@ -14,7 +14,7 @@
                   </div>
 
                   @foreach ($cats as $cat)
-                    <div class="col-sm-2">
+                    <div class="col-sm-4 col-md-3 col-lg-2">
                        <a href="{{route('categories.show', $cat->slug)}}">
                     <img src="{{ asset('images/' . $cat->image) ? : asset('images.Noimage.jpg')}}" width="100%" height="150px" alt="{{$cat->title}}">
                     <h2 class="category-name"> {{$cat->title}} </h2>

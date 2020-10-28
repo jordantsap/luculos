@@ -5,6 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="icon"
+      type="image/png"
+      href="{{ asset('favicon.png')}}">
+
     <title>{{config('app.name') . ' | ' . __('meta.title')}}</title>
 
     <meta name="description" content="{{__('meta.description')}}">
@@ -16,6 +20,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+    <linK rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <style>
         /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
         html {

@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use DB;
+use App\Models\Type;;
 
 class TypeSeeder extends Seeder
 {
@@ -14,25 +14,64 @@ class TypeSeeder extends Seeder
      */
     public function run()
     {
-      DB::table('types')->insert([
-        'title' => 'Plain',
-        'slug' => 'plain',
-        'description' => '',
-        'image' => 'Noimage.jpg',
-    ]);
+          $type = new Type;
 
-    DB::table('types')->insert([
-      'title' => 'Premium Quality',
-      'slug' => 'premium-quality',
-      'description' => '',
-      'image' => 'premium.png',
-    ]);
+          app()->setLocale('en');
 
-    DB::table('types')->insert([
-        'title' => 'Bio Products',
-        'slug' => 'bioproductS',
-        'description' => '',
-        'image' => 'bio.png',
-    ]);
+          $type->title = 'Plain';
+          $type->slug = 'plain';
+          $type->image = 'Noimage.jpg';
+          $type->description = '';
+          $type->save();
+
+          app()->setLocale('el');
+
+          $type->title = 'Απλά';
+          $type->slug = 'apla';
+          $type->image = 'Noimage.jpg';
+          $type->description = '';
+          $type->save();
+          //------------------------
+
+          $type = new Type;
+
+          app()->setLocale('en');
+
+          $type->title = 'Premium Quality';
+          $type->slug = 'premium-quality';
+          $type->image = 'premium.png';
+          $type->description = '';
+          $type->save();
+
+          app()->setLocale('el');
+
+          $type->title = 'Εξαιρετική Ποιότητα';
+          $type->slug = 'eksairetiki-poiotita';
+          $type->image = 'premium.png';
+          $type->description = '';
+          $type->save();
+          //-------------------------------
+
+          $type = new Type;
+
+          app()->setLocale('en');
+
+          $type->title = 'Bio Products';
+          $type->slug = 'bioproducts';
+          $type->image = 'bio.png';
+          $type->description = '';
+          $type->save();
+
+          app()->setLocale('el');
+
+          $type->title = 'Βιολογικά Προϊόντα';
+          $type->slug = 'viologikaproionta';
+          $type->image = 'bio.png';
+          $type->description = '';
+          $type->save();
+
+          /*
+          * More translations below
+          */
     }
 }

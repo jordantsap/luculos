@@ -17,4 +17,14 @@ return [
     'category' => 'Category',
     'price-value' => 'Luculos best price value',
     'noproducts' => 'No published products',
+
+    'news' => 'News',
+
+    'name' => "Name",
+    'email' => "Email Address",
+    'messageplaceholder' => "Message",
+    'contactbutton' => "Submit",
+
+    'pricelistheader' => 'Request Wholesale Price List',
+    'contactheader' => 'Contact us to make our deal.',
 ];

@@ -175,6 +175,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+        * Newly created in providers folder
+        */
+        App\Providers\DataShareServiceProvider::class,
+
     ],
 
     /*

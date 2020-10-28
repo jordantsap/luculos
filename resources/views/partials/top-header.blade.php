@@ -14,11 +14,11 @@
                     <div id="top-lang" class="col-sm">
                       <li class="list-group-item bg-transparent text-dark">
                         <ul class="list-group pt-1 float-right list-group-horizontal">
-                          <li class="list-group-item bg-transparent text-dark">
+                          {{-- <li class="list-group-item bg-transparent text-dark">
                             <a href="#">
                               {{ app()->getLocale() }} <i class="fa fa-caret-down"></i>
                             </a>
-                          </li>
+                          </li> --}}
 
                           {{-- <ul class=""> --}}
                               @foreach (config('translatable.locales') as $lang => $language)

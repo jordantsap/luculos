@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use DB;
+use App\Models\Category;
 class ProductController extends Controller
 {
     /**
@@ -14,8 +15,13 @@ class ProductController extends Controller
      */
     public function index()
     {
-      $cats = DB::table('categories')->where('type_id', 1)->get();
-      $products = DB::table('products')->get();
+      $cats = Category::withTranslation()
+      ->where('type_id', 1)->get();
+
+      $products = DB::table('products')
+      // ->withTranslation()
+      ->get();
+
         return view('products.index', compact('cats', 'products'));
     }
 

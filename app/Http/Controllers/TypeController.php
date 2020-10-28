@@ -8,21 +8,14 @@ use Illuminate\Http\Request;
 class TypeController extends Controller
 {
 
-    public function premium(Type $type)
+    public function type($slug)
     {
-      $type = Type::find(2);
+      $type = Type::whereTranslation('slug', $slug)
+      ->first();
      // dd($cat);
        return view('types.show', compact('type'));
     }
 
-    public function bioproducts(Type $type)
-    {
-      $type = Type::find(3);
-     // dd($cat);
-       return view('types.show', compact('type'));
-    }
-
-    
     /**
      * Display a listing of the resource.
      *

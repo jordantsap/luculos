@@ -4,10 +4,19 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
+use Astrotomic\Translatable\Translatable;
 
 class Category extends Model
 {
-    use HasFactory;
+    use HasFactory, Translatable;
+
+    public $translatedAttributes =
+    [
+      'title',
+      'slug',
+      'description'
+    ];
 
     /**
      * The attributes that are mass assignable.
@@ -15,10 +24,7 @@ class Category extends Model
      * @var array
      */
     protected $fillable = [
-        'title',
-        'slug',
         'type_id',
-        'description',
         'image',
     ];
 

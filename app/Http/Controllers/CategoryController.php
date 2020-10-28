@@ -44,9 +44,9 @@ class CategoryController extends Controller
      * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function show(Category $category)
+    public function show($slug)
     {
-       $cat = Category::find($category->id);
+       $cat = Category::whereTranslation('slug', $slug)->first();
       // dd($cat);
         return view('categories.show', compact('cat'));
     }
