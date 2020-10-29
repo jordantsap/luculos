@@ -2,14 +2,19 @@
 
 use Illuminate\Support\Facades\Route;
 
+Route::redirect('admin', 'admin/dashboard');
+Route::prefix('admin')->group(function () {
+
+  Auth::routes(['register' => false]);
+
+  Route::get('dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard')->middleware('auth');
+
+});
+
 Route::get('lang/{language}', ['as' => 'lang.switch', 'uses' => 'LanguageController@switchLang']);
 
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'home'])->name('homepage');
-
-Auth::routes(['register' => false]);
-
-Route::get('dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard')->middleware('auth');
 
 
 Route::resource('products', ProductController::class);
@@ -29,3 +34,5 @@ Route::post('pricelist', PriceListController::class, 'postpricelist')->name('pos
 
 Route::get('contact', ContactController::class, 'getcontact')->name('getcontact');
 Route::post('contact', ContactController::class, 'postcontact')->name('postcontact');
+
+Route::view('our-vision', 'our-vision')->name('our-vision');

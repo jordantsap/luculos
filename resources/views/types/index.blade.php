@@ -1,5 +1,9 @@
 @extends('layouts.public')
 
+@section('title', '')
+@section('meta_description', $product->category->name.' '.$product->meta_description)
+@section('meta_keywords', $product->meta_keywords.' '. $product->category->name)
+
 
 @section('content')
 

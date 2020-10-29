@@ -4,19 +4,31 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
+use Astrotomic\Translatable\Translatable;
 
 class Product extends Model
 {
-    use HasFactory;
+    use HasFactory, Translatable;
+
+    public $translatedAttributes =
+    [
+      'title',
+      'slug',
+      'description'
+    ];
 
     protected $fillable = [
-        'title',
-        'slug',
-        'description',
-        'image',
-        'category_id',
-        'type_id',
+      'image',
+      'category_id',
+      'type_id',
     ];
+    
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
+
 
     /**
      * Get the post that owns the comment.

@@ -1,5 +1,9 @@
 @extends('layouts.public')
 
+@section('title', '')
+@section('meta_description', __('meta.pricelistdescription'))
+@section('meta_keywords', __('meta.pricelistkeywords'))
+
 
 @section('content')
 
@@ -10,7 +14,7 @@
     <div class="col-sm-8">
       <div class="col-sm-12">
         <h1 class="text-center">
-          {{ __("page.pricelist")}}
+          {{ __("page.pricelistheader")}}
         </h1>
       </div>
       <form action="{{ route('postpricelist') }}" method="post" class="">

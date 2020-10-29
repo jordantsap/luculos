@@ -2,9 +2,9 @@
 
 return [
 
-    'title' => 'If you\'re in the mood, to distribute best food.',
-    'home_description' => 'Luculos foods.',
-    'home_keywords' => 'export foods, luculos, foods.',
+    'title' => 'Wenn Sie in der Stimmung sind, bestes Essen zu verteilen.',
+    'description' => 'Luculos Lebensmittel.',
+    'keywords' => 'Export von Lebensmitteln, Luculos, Lebensmitteln.',
 
     'products_title' => '',
     'products_description' => '',
