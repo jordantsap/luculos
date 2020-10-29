@@ -14,6 +14,10 @@ return [
     'news' => 'Новизна',
     'allproducts' => 'Все продукты',
     'catproducts' => 'Категория Продукты: ',
+    'box' => 'В коробке: ',
+    'palette' => 'В палитре: ',
+    'pieces_per_package' => 'Штук в упаковке: ',
+    'pieces' => 'Штук',
 
     'productscats' => 'Категории еды Luculos',
     'category' => 'Категория: ',

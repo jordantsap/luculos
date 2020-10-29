@@ -17,8 +17,11 @@ class CreateProductsTable extends Migration
             $table->id();
 
             $table->string('image');
+            $table->string('palette');
+            $table->string('box');
+
             $table->foreignId('category_id');
-            $table->foreignId('type_id');
+            $table->foreignId('type_id')->nullable();
 
             $table->timestamps();
         });

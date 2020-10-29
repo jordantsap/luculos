@@ -14,6 +14,10 @@ return [
     'news' => 'Νέα',
     'allproducts' => 'Προϊόντα',
     'catproducts' => 'Προϊόντα Κατηγορίας: ',
+    'box' => 'Στο Κουτί: ',
+    'palette' => 'Στη Παλέτα: ',
+    'pieces_per_package' => 'Τεμάχια ανα Συσκευασία: ',
+    'pieces' => 'Τεμάχια',
 
     'productscats' => 'Κατηγορίες τροφίμων Luculos',
     'category' => 'Κατηγορία: ',

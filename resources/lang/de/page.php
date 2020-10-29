@@ -14,7 +14,10 @@ return [
     'news' => 'Neues',
     'allproducts' => 'Alle Produkte',
     'catproducts' => 'Kategorie Produkte: ',
-    // 'login'=> 'Anmeldung',
+    'box' => 'In der Box: ',
+    'palette' => 'In the Palette: ',
+    'pieces_per_package' => 'Stücke pro Packung: ',
+    'pieces' => 'Stücke',
 
     'productscats' => 'Luculos Lebensmittelkategorien',
     'category' => 'Kategorie: ',

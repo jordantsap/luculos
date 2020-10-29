@@ -20,15 +20,17 @@ class Product extends Model
 
     protected $fillable = [
       'image',
+      'box',
+      'palette',
+      'pieces_per_package',
       'category_id',
       'type_id',
     ];
-    
+
     public function getRouteKeyName()
     {
         return 'slug';
     }
-
 
     /**
      * Get the post that owns the comment.

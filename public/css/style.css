@@ -77,13 +77,13 @@ h2.category-title, h2.category-title:hover, h3.product-title{
     clear: none;
     margin: 0;
 }
-h1 > a.category-title:hover {text-decoration: underline;}
-h1 a.category-title{
+/* h2 > a.category-title:hover {text-decoration: underline;} */
+h2 a.category-title{
     /* font-size: 20px; */
     text-align: center;
     padding: 5px 0;
     color: black !important;
-    text-decoration: none !important;
+    /* text-decoration: none !important; */
     line-height: 18px;
     text-transform: none;
     letter-spacing: initial;

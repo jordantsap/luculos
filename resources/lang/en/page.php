@@ -15,6 +15,10 @@ return [
     'login' => 'Login',
     'allproducts' => 'All Products',
     'catproducts' => 'Category Products: ',
+    'box' => 'In the Box: ',
+    'palette' => 'In the Palette: ',
+    'pieces_per_package' => 'Pieces per package: ',
+    'pieces' => 'Piece(s)',
 
     'productscats' => 'Luculos Food Categories',
     'category' => 'Category: ',

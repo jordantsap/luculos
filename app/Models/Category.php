@@ -48,15 +48,5 @@ class Category extends Model
     {
         return $this->belongsTo('App\Models\Type');
     }
-
-    /**
-     * Scope a query to only include premium categories.
-     *
-     * @param  \Illuminate\Database\Eloquent\Builder  $query
-     * @return \Illuminate\Database\Eloquent\Builder
-     */
-    public function scopePremium($query)
-    {
-        return $query->where('type_id', 2);
-    }
+    
 }

@@ -23,6 +23,9 @@ class ProductSeeder extends Seeder
       $product->slug = 'enproduct1';
       $product->image = 'Noimage.jpg';
       $product->description = '';
+
+      $product->box = 1;
+      $product->palette = 40;
       $product->category_id = 1;
       $product->type_id = 1;
       $product->save();
@@ -33,6 +36,9 @@ class ProductSeeder extends Seeder
       $product->slug = 'elproion1';
       $product->image = 'Noimage.jpg';
       $product->description = '';
+
+      $product->box = 1;
+      $product->palette = 45;
       $product->category_id = 1;
       $product->type_id = 1;
       $product->save();
@@ -43,6 +49,9 @@ class ProductSeeder extends Seeder
       $product->slug = 'deproduct1';
       $product->image = 'Noimage.jpg';
       $product->description = '';
+
+      $product->box = 1;
+      $product->palette = 56;
       $product->category_id = 1;
       $product->type_id = 1;
       $product->save();
@@ -53,6 +62,9 @@ class ProductSeeder extends Seeder
       $product->slug = 'ruproduct1';
       $product->image = 'Noimage.jpg';
       $product->description = '';
+
+      $product->box = 1;
+      $product->palette = 67;
       $product->category_id = 1;
       $product->type_id = 1;
       $product->save();
@@ -66,6 +78,9 @@ class ProductSeeder extends Seeder
       $product->slug = 'enproduct2';
       $product->image = 'premium.png';
       $product->description = '';
+
+      $product->box = 1;
+      $product->palette = 77;
       $product->category_id = 1;
       $product->type_id = 1;
       $product->save();
@@ -76,6 +91,9 @@ class ProductSeeder extends Seeder
       $product->slug = 'elproduct2';
       $product->image = 'premium.png';
       $product->description = '';
+
+      $product->box = 1;
+      $product->palette = 77;
       $product->category_id = 1;
       $product->type_id = 1;
       $product->save();
@@ -86,6 +104,9 @@ class ProductSeeder extends Seeder
       $product->slug = 'deproduct2';
       $product->image = 'premium.png';
       $product->description = '';
+
+      $product->box = 1;
+      $product->palette = 50;
       $product->category_id = 1;
       $product->type_id = 1;
       $product->save();
@@ -96,6 +117,9 @@ class ProductSeeder extends Seeder
       $product->slug = 'ruproduct2';
       $product->image = 'premium.png';
       $product->description = '';
+
+      $product->box = 1;
+      $product->palette = 46;
       $product->category_id = 1;
       $product->type_id = 1;
       $product->save();
@@ -109,6 +133,9 @@ class ProductSeeder extends Seeder
       $product->slug = 'enproduct3';
       $product->image = 'bio.png';
       $product->description = '';
+
+      $product->box = 1;
+      $product->palette = 68;
       $product->category_id = 1;
       $product->type_id = 1;
       $product->save();
@@ -119,6 +146,9 @@ class ProductSeeder extends Seeder
       $product->slug = 'elproduct3';
       $product->image = 'bio.png';
       $product->description = '';
+
+      $product->box = 1;
+      $product->palette = 56;
       $product->category_id = 1;
       $product->type_id = 1;
       $product->save();
@@ -129,16 +159,22 @@ class ProductSeeder extends Seeder
       $product->slug = 'deproduct3';
       $product->image = 'bio.png';
       $product->description = '';
+
+      $product->box = 1;
+      $product->palette = 79;
       $product->category_id = 1;
       $product->type_id = 1;
       $product->save();
-      
+
       app()->setLocale('ru');
 
       $product->title = 'ruproduct3';
       $product->slug = 'ruproduct3';
       $product->image = 'bio.png';
+      $product->box = 1;
+      $product->palette = 50;
       $product->description = '';
+
       $product->category_id = 1;
       $product->type_id = 1;
       $product->save();
