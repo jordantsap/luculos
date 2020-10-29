@@ -29,10 +29,18 @@ class Type extends Model
 
 
     /**
-     * Get the products for the category.
+     * Get the categories for the type.
      */
     public function categories()
     {
         return $this->hasMany('App\Models\Category');
+    }
+
+    /**
+     * Get the products for the category.
+     */
+    public function products()
+    {
+        return $this->hasMany('App\Models\Product');
     }
 }

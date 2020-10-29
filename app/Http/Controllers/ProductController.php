@@ -18,9 +18,7 @@ class ProductController extends Controller
       $cats = Category::withTranslation()
       ->where('type_id', 1)->get();
 
-      $products = DB::table('products')
-      // ->withTranslation()
-      ->get();
+      $products = Product::withTranslation()->where('type_id', 1)->paginate(8);
 
         return view('products.index', compact('cats', 'products'));
     }
@@ -52,9 +50,10 @@ class ProductController extends Controller
      * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function show(Product $product)
+    public function show($slug)
     {
-        return view('products.show');
+        $product = Product::with('category')->whereTranslation('slug', $slug)->first();
+        return view('products.show', compact('product'));
     }
 
     /**

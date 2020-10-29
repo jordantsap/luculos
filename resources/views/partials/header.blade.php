@@ -18,7 +18,7 @@
                     <ul class="navbar-nav">
 
                         <li class="nav-item active">
-                            <a class="nav-link" href="#"> {{__('page.ourmission')}} <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="{{ route('our-vision')}}"> {{__('page.ourvision')}} <span class="sr-only">(current)</span></a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -87,11 +87,11 @@
 
                             @auth
                             <li class="nav-item">
-                            <a href="{{ url('/dashboard') }}" class="nav-link">Dashboard</a>
+                            <a href="{{ route('dashboard') }}" class="nav-link">Dashboard</a>
                             </li>
                             @else
                             <li class="nav-item">
-                            <a href="{{ route('login') }}" class="nav-link">Login</a>
+                            <a href="{{ route('login') }}" class="nav-link">{{__('page.login')}}</a>
                             </li>
 
                             @if (Route::has('register'))

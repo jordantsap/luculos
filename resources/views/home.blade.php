@@ -1,4 +1,7 @@
 @extends('layouts.public')
+@section('title', __('meta.title'))
+@section('description', __('meta.home_description'))
+@section('keywords', __('meta.home_keywords'))
 
 @section('content')
 
@@ -12,7 +15,5 @@
                   </a>
               </div>
           </div>
-
-
 
 @endsection

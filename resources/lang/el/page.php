@@ -5,17 +5,18 @@ return [
     'backlink' => 'Πίσω',
 
     // header.blade file menu items
-    'ourmission' => 'Σκοπός μας',
+    'ourvision' => 'Όραμα μας',
     'premiumquality' => 'Εξαιρετική Ποιότητα',
     'products' => 'Προϊόντα',
     'bioproducts' => 'Βιολογικά',
     'pricelist' => 'Τιμοκατάλογος',
     'contact' => 'Επικοινωνία',
     'news' => 'Νέα',
-
+    'allproducts' => 'Προϊόντα',
+    'catproducts' => 'Προϊόντα Κατηγορίας: ',
 
     'productscats' => 'Κατηγορίες τροφίμων Luculos',
-    'category' => 'Κατηγορία',
+    'category' => 'Κατηγορία: ',
     'price-value' => 'Τιμές και ποιότητα Luculos',
     'noproducts' => 'Χωρίς προϊόντα',
 
