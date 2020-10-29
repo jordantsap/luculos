@@ -21,4 +21,10 @@ class Page extends Model
     protected $fillable = [
       'image',
     ];
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
+
 }

@@ -9,10 +9,10 @@
       type="image/png"
       href="{{ asset('favicon.png')}}">
 
-    <title>{{config('app.name') . ' | ' . __('meta.title')}}</title>
+    <title>{{config('app.name') . ' | '}} @yield('title')</title>
 
-    <meta name="description" content="{{__('meta.description')}}">
-    <meta name="keywords" content="{{__('meta.keywords')}}">
+    <meta name="description" content="@yield('description')">
+    <meta name="keywords" content=' @yield('keywords')'>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -230,6 +230,9 @@
         }
 
         .text-center {
+            text-align: center
+        }
+        p.text-center {
             text-align: center
         }
 

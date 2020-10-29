@@ -1,5 +1,9 @@
 @extends('layouts.public')
 
+@section('title', '' )
+@section('description', __('meta.products_description'))
+@section('keywords',  __('meta.products_keywords'))
+
 
 @section('content')
 
@@ -14,25 +18,33 @@
                   </div>
 
                   @foreach ($cats as $cat)
-                    <div class="col-sm-4 col-md-3 col-lg-2">
+                    <div class="col-sm-4 col-md-3 col-lg-2 pb-2">
                        <a href="{{route('categories.show', $cat->slug)}}">
                     <img src="{{ asset('images/' . $cat->image) ? : asset('images.Noimage.jpg')}}" width="100%" height="150px" alt="{{$cat->title}}">
-                    <h2 class="category-name"> {{$cat->title}} </h2>
+                    <h2 class="category-title"> {{$cat->title}} </h2>
                     </a>
                   </div>
                   @endforeach
 
-
+                  <div class="col-sm-12">
+                    <hr>
+                  </div>
+                  <div class="col-sm-12 p-3">
+                    <h2 class='text-center'> {{__('page.allproducts')}}</h2>
+                  </div>
                 @if(count($products) > 0)
-                @foreach ($products as $product)
-                  <div class="col-sm-2">
-                     <a href="{{route('products.show', $product->slug)}}">
-                  <img src="{{ asset('images/' . $product->image) ? : asset('images.Noimage.jpg')}}" width="100%" height="150px" alt="{{$product->title}}">
-                  <h3 class="product-name"> {{$product->title}} </h3>
-                  </a>
+
+                <div class="row col-sm-12">
+                  @foreach ($products as $product)
+                    <div class="col-sm-4 col-md-3 col-lg-2">
+                       <a href="{{route('products.show', $product->slug)}}">
+                    <img src="{{ asset('images/' . $product->image) ? : asset('images.Noimage.jpg')}}" width="100%" height="150px" alt="{{$product->title}}">
+                    <h3 class="product-title"> {{$product->title}} </h3>
+                    </a>
+                  </div>
+                  @endforeach
+                @else
                 </div>
-                @endforeach
-              @else
                 <div class="col-sm-12">
                   <p class="text-center">
                     <h3 class="text-center">{{__('page.noproducts')}}</h3>

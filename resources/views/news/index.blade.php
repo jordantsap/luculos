@@ -1,5 +1,8 @@
 @extends('layouts.public')
 
+@section('title', __('meta.newstitle'))
+@section('meta_description', __('meta.newsdescription'))
+@section('meta_keywords', __('meta.newskeywords'))
 
 @section('content')
 
