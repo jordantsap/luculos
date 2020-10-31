@@ -31,6 +31,7 @@
                   </div>
                   <div class="col-sm-12 p-3">
                     <h2 class='text-center'> {{__('page.allproducts')}}</h2>
+
                   </div>
                 @if(count($products) > 0)
 
@@ -48,12 +49,13 @@
                 <div class="col-sm-12">
                   <p class="text-center">
                     <h3 class="text-center">{{__('page.noproducts')}}</h3>
+
                   </p>
                 </div>
 
                 <div class="col-sm-12">
                   <p class="text-center">
-                    <h3 class="text-center">{{$products->links}}</h3>
+                    <h3 class="text-center">{{$products->links()}}</h3>
                   </p>
                 </div>
               @endif

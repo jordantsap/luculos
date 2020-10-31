@@ -34,11 +34,11 @@ class Category extends Model
     }
 
     /**
-     * Get the products for the category.
+     * The products that belong to the category.
      */
     public function products()
     {
-        return $this->hasMany('App\Models\Product', 'category_id');
+        return $this->belongsToMany('App\Models\Product');
     }
 
     /**
@@ -48,5 +48,5 @@ class Category extends Model
     {
         return $this->belongsTo('App\Models\Type');
     }
-    
+
 }

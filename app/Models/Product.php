@@ -33,11 +33,11 @@ class Product extends Model
     }
 
     /**
-     * Get the post that owns the comment.
+     * The users that belong to the role.
      */
-    public function category()
+    public function categories()
     {
-        return $this->belongsTo('App\Models\Category', 'category_id');
+        return $this->belongsToMany('App\Models\Category');
     }
 
     /**

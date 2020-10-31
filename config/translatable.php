@@ -12,9 +12,9 @@ return [
     */
     'locales' => [
         'en' => 'English',
-        'el' => 'Ελληνικα',
         'ru' => 'Pусский',
         'de' => 'Deutsche',
+        // 'el' => 'Ελληνικα',
       ],
 
     /*

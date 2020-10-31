@@ -1,8 +1,8 @@
 @extends('layouts.public')
 
-@section('title', '')
-@section('meta_description', $product->category->name.' '.$product->meta_description)
-@section('meta_keywords', $product->meta_keywords.' '. $product->category->name)
+@section('title', $product->title)
+@section('description', $product->title)
+@section('keywords', $product->title )
 
 
 
@@ -16,7 +16,10 @@
         <div class="col-sm-12">
           <h1 class="text-center">
 
-            {{ $product->title}}
+            {{ $product->title }}
+            @can ('update_products', App\Product::class)
+        <small><a class="btn btn-primary" href="{{route('prod.edit', $product->id)}}">Edit</a> - <a class="btn btn-warning" href="javascript:history.back()">Go Back</a></small>
+      @endcan
 
           </h1>
         </div>
@@ -24,13 +27,15 @@
 				<div class="col-sm-6">
 					<img src="{{ asset('images/'.$product->image) }}" alt="{{ $product->title }}" width="100%" height="350px">
 				</div>
-        <div class="col-sm-6 my-auto">
-          <h2 class="category-title">
+        <div class="card col-sm-6 my-auto">
+          <h2 class="card category-title">
             {{__('page.category')}}
-            <a class="category-title"href="{{$product->category->slug}}">
-              {{$product->category->title}}
-            </a>
-            <div class="col-sm-12 mt-2">
+            @foreach ($product->categories as $category)
+              <a class="card-body category-title"href="{{route('categories.show', $category->slug)}}">
+                <br> <br>{{ $category->title . ', '}}
+              </a>
+            @endforeach
+            <div class="card-body col-sm-12 mt-2"> <br>
               {{__('page.pieces_per_package')}}
               <br>
             </div>
@@ -48,10 +53,10 @@
         <div class="col-sm-12">
           <br>
 
-          <div class="panel panel-primary text-center">
+          <div class="card card-primary text-center">
 
-            <div class="panel-heading">
-              <h3 class="panel-title">{{__('product.description')}}</h3>
+            <div class="card-heading">
+              <h3 class="card-title">{{__('product.description')}}</h3>
     				</div>
 
 					  <div class="panel-body">

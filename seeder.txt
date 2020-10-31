@@ -1,0 +1,53 @@
+$product = new Product;
+694
+app()->setLocale('en');
+
+$product->title = '';
+$product->slug = '';
+$product->image = 'bio.png';
+$product->description = '';
+
+$product->box = 1;
+$product->palette = 68;
+$product->category_id = 4;
+$product->type_id = 1;
+$product->save();
+
+app()->setLocale('el');
+
+$product->title = 'elproduct3';
+$product->slug = 'elproduct3';
+$product->image = 'bio.png';
+$product->description = '';
+
+$product->box = 1;
+$product->palette = 56;
+// $product->category_id = 1;
+$product->type_id = 1;
+$product->save();
+
+app()->setLocale('de');
+
+$product->title = 'deproduct3';
+$product->slug = 'deproduct3';
+$product->image = 'bio.png';
+$product->description = '';
+
+$product->box = 1;
+$product->palette = 79;
+// $product->category_id = 1;
+$product->type_id = 1;
+$product->save();
+
+app()->setLocale('ru');
+
+$product->title = 'ruproduct3';
+$product->slug = 'ruproduct3';
+$product->image = 'bio.png';
+$product->box = 1;
+$product->palette = 50;
+$product->description = '';
+
+// $product->category_id = 1;
+$product->type_id = 1;
+$product->save();

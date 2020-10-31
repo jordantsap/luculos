@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
           PageSeeder::class,
           TypeSeeder::class,
           ProductSeeder::class,
+          // CategoryProductSeeder::class,
           // \App\Models\User::factory(10)->create();
       ]);
 

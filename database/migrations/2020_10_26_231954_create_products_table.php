@@ -20,7 +20,7 @@ class CreateProductsTable extends Migration
             $table->string('palette');
             $table->string('box');
 
-            $table->foreignId('category_id');
+            $table->foreignId('category_id')->nullable();
             $table->foreignId('type_id')->nullable();
 
             $table->timestamps();
