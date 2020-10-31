@@ -1,8 +1,8 @@
 @extends('layouts.public')
 
-@section('title', __("meta.typetitle"))
-@section('meta_description', __('meta.typedescription'))
-@section('meta_keywords', __('meta.typedescritpion'))
+@section('title', $type->title . ' ' . __('meta.typetitle'))
+@section('description', __('meta.typedescription'))
+@section('keywords', __('meta.typekeywords'))
 
 @section('content')
 
@@ -41,7 +41,7 @@
                 </li>
                 <li class="list-group-item">
                   <a href="{{route('products.show', $product->slug) }}" class="btn btn-default btn-block">
-                    <img src="{{ asset('images/'.$product->image) }}" width="100%" height="100px" alt="{{$product->title}}" title"{{$product->title}}">
+                    <img src="{{ asset('images/products/'.$product->image) }}" width="100%" height="100px" alt="{{$product->title}}" title"{{$product->title}}">
                   </a>
                 </li>
 

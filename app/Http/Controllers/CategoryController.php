@@ -46,7 +46,7 @@ class CategoryController extends Controller
      */
     public function show($slug)
     {
-       $cat = Category::whereTranslation('slug', $slug)->first();
+       $cat = Category::with('products')->whereTranslation('slug', $slug)->first();
       // dd($cat);
         return view('categories.show', compact('cat'));
     }

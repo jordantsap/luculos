@@ -18,7 +18,7 @@ class ProductController extends Controller
       $cats = Category::withTranslation()
       ->where('type_id', 1)->get();
 
-      $products = Product::withTranslation()->where('type_id', 1)->get();
+      $products = Product::withTranslation()->where('type_id', 1)->simplePaginate(8);
 
         return view('products.index', compact('cats', 'products'));
     }
@@ -30,9 +30,9 @@ class ProductController extends Controller
      */
     public function create()
     {
-      $this->authorize('create', 'App\Models\Product');
-      $producttypes = \App\ProductType::all();
-      return view('products.create', compact('producttypes'));
+      // $this->authorize('create', 'App\Models\Product');
+      $categories = Category::all();
+      return view('products.create', compact('categories'));
     }
 
     /**
@@ -46,48 +46,29 @@ class ProductController extends Controller
       $this->validate($request,[
         'title' =>'required|max:100',
         'description' =>'required',
-        'meta_description' =>'max:160',
-        'meta_keywords' =>'',
-        'company_id' => '',
-        'active' => 'nullable',
-        'user_id' => '',
-        'product_type' => '',
-        'header' => '',
-        'logo' => '',
-        'image1' =>'',
-        'image2' => '',
-        'image3' => '',
-        'sku' => '',
-        'price' => '',
+        // 'active' => 'nullable',
+        'category' => '',
+        'image' => '',
         ]);
       $product = new Product;
       $product->title = $request->input('title');
       $product->slug = str_slug($request->input('title'), '-');
-      $product->meta_description = $request->input('meta_description');
-      $product->meta_keywords = $request->input('meta_keywords');
-      $product->company_id = $request->company_id;
-      $product->sku = $request->sku;
-      $product->price = $request->price;
-      $product->product_type = $request->product_type;
-      $product->header = $request->header;
-      $product->logo = $request->logo;
-      $product->image1 = $request->image1;
-      $product->image2 = $request->image2;
-      $product->image3 = $request->image3;
-      $product->active = $request->active;
-      $product->description = $request->description;
-      $product->user_id = Auth::user()->id;
 
-      if ($request->hasFile('header')) {
-          $header = $request->file('header');
-          $filename = time() . '.' . $header->getClientOriginalExtension();
+      $product->image = $request->image;
+      $product->description = $request->description;
+
+      if ($request->hasFile('image')) {
+          $image = $request->file('image');
+          $filename = time() . '.' . $image->getClientOriginalExtension();
           $location = public_path("products/" . $filename);
-          Image::make($header)->resize(800, 400)->save($location);
+          Image::make($image)->resize(800, 400)->save($location);
           // Storage::put($image)->save($location);
-          $product->header = $filename;
+          $product->image = $filename;
         }
 
       $product->save();
+      $products->categories()->sync($request->category);
+
       $notification = array(
       'message' => 'Product added successfully',
       'alert-type' => 'info'

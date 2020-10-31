@@ -1,8 +1,8 @@
 @extends('layouts.public')
 
-@section('title', '')
-@section('meta_description', __('meta.visiondescription'))
-@section('meta_keywords', __('meta.visiondescription'))
+@section('title', __('meta.visiontitle'))
+@section('description', __('meta.visiondescription'))
+@section('keywords', __('meta.visionkeywords'))
 
 
 @section('content')

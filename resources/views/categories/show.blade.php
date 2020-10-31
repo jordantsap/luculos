@@ -1,8 +1,8 @@
 @extends('layouts.public')
 
-@section('title', $cat->title . ' ' . __('meta.catproducts'))
+@section('title', __('meta.catproducts_title'))
 @section('description', $cat->title . ' ' . __('meta.catproducts_description'))
-@section('keywords', $cat->title . ' ' . __('meta.catproducts_keywords'))
+@section('keywords', $cat->title . ', ' . __('meta.catproducts_keywords'))
 
 @section('content')
 
@@ -31,21 +31,21 @@
         <div class="col-sm-3">
           <ul class="list-group">
             <a href="{{route('products.show', $product->slug) }}" class="btn btn-default btn-block">
-            <li class="list-group-item">
+            {{-- <li class="list-group-item">
               <h2 class="text-center" >{{ Str::limit($product->title, 20)}}</h2>
-            </li>
+            </li> --}}
             <li class="list-group-item">
-              <img src="{{ asset('images/'.$product->image) }}" width="100%" height="100px" alt="{{$product->title}}" title"{{$product->title}}">
+              <img src="{{ asset('images/products/'.$product->image) }}" width="100%" height="100px" alt="{{$product->title}}" title"{{$product->title}}">
             </li>
           </a>
 
-          <li class="list-group-item">
+          {{-- <li class="list-group-item">
 
             <h3>{!!Str::limit($product->description, 20)!!}</h3>
-          </li>
+          </li> --}}
           <li class="list-group-item">
             <a href="{{route('products.show', $product->slug) }}" class="btn btn-default btn-block">
-              {{$product->title}}
+              <h3 class="text-center"> {{$product->title}} </h3>
             </a>
           </li>
           </ul>

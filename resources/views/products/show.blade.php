@@ -1,9 +1,8 @@
 @extends('layouts.public')
 
-@section('title', $product->title)
-@section('description', $product->title)
-@section('keywords', $product->title )
-
+@section('title', __('meta.products_title'))
+@section('description', $product->title . ' ' . __('meta.products_description'))
+@section('keywords', $product->title . ' ' . __('meta.products_keywords'))
 
 
 @section('content')
@@ -25,7 +24,7 @@
         </div>
 
 				<div class="col-sm-6">
-					<img src="{{ asset('images/'.$product->image) }}" alt="{{ $product->title }}" width="100%" height="350px">
+					<img src="{{ asset('images/products/'.$product->image) }}" alt="{{ $product->title }}" width="100%" height="350px">
 				</div>
         <div class="card col-sm-6 my-auto">
           <h2 class="card category-title">

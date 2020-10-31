@@ -11,6 +11,7 @@ return [
     'products_keywords' => '',
 
     'catproducts_title' =>'',
+    
     'catproducts_description' =>'',
     'catproducts_keywords' =>'',
 ];
