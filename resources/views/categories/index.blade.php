@@ -1,8 +1,8 @@
 @extends('layouts.public')
 
-@section('title', '')
-@section('meta_description', $product->category->name.' '.$product->meta_description)
-@section('meta_keywords', $product->meta_keywords.' '. $product->category->name)
+@section('title', __('categoriestitle'))
+@section('description', $product->categories->title . __('categoriesdescription'))
+@section('keywords', $product->categories->title . ' ' . __('categorieskeywords'))
 
 
 @section('content')
@@ -23,7 +23,7 @@
         <tr>
           @foreach ($cats as $cat)
             <th scope="row"> {{$cat->id}}</th>
-            <td>{{$cat->image}}</td>
+            <td>{{ asset('categories/'), $cat->image}}</td>
             <td> <a href="{{route('categories.show', $cat->id )}}">{{$cat->title}}</a> </td>
             <td> {{ $cat->description ? : '-'}}</td>
           </tr>

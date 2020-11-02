@@ -1,8 +1,8 @@
 @extends('layouts.public')
 
-@section('title', '' )
-@section('description', __('meta.products_description'))
-@section('keywords',  __('meta.products_keywords'))
+@section('title', __('meta.productstitle') )
+@section('description', __('meta.productsdescription'))
+@section('keywords',  __('meta.productskeywords'))
 
 
 @section('content')
@@ -20,7 +20,7 @@
                   @foreach ($cats as $cat)
                     <div class="col-sm-4 col-md-3 col-lg-2 pb-2">
                        <a href="{{route('categories.show', $cat->slug)}}">
-                    <img src="{{ asset('images/' . $cat->image) ? : asset('images.Noimage.jpg')}}" width="100%" height="150px" alt="{{$cat->title}}">
+                    <img src="{{ asset('images/categories/' . $cat->image) ? : asset('images.Noimage.jpg')}}" width="100%" height="150px" alt="{{$cat->title}}">
                     <h2 class="category-title"> {{$cat->title}} </h2>
                     </a>
                   </div>
@@ -37,13 +37,19 @@
 
                 <div class="row col-sm-12">
                   @foreach ($products as $product)
-                    <div class="col-sm-4 col-md-3 col-lg-2">
+                    <div class="col-sm-4 col-xl-2 text-center">
                        <a href="{{route('products.show', $product->slug)}}">
-                    <img src="{{ asset('images/' . $product->image) ? : asset('images.Noimage.jpg')}}" width="100%" height="150px" alt="{{$product->title}}">
-                    <h3 class="product-title"> {{$product->title}} </h3>
+                    <img src="{{ asset('images/products/' . $product->image) ? : asset('images.Noimage.jpg')}}" width="100%" height="150px" alt="{{$product->title}}">
+                    <h3 class="product-title text-center"> {{$product->title}} </h3>
                     </a>
                   </div>
                   @endforeach
+
+                  <div class="col-sm-12 mt-2">
+                    <div class="float-center">
+                      <h3 class="text-center">{{$products->links()}}</h3>
+                    </div>
+                  </div>
                 @else
                 </div>
                 <div class="col-sm-12">
@@ -53,11 +59,6 @@
                   </p>
                 </div>
 
-                <div class="col-sm-12">
-                  <p class="text-center">
-                    <h3 class="text-center">{{$products->links()}}</h3>
-                  </p>
-                </div>
               @endif
             </div>
 

@@ -23,14 +23,6 @@ class TypeSeeder extends Seeder
       $type->image = 'Noimage.jpg';
       $type->description = '';
       $type->save();
-
-      app()->setLocale('el');
-
-      $type->title = 'Απλά';
-      $type->slug = 'apla';
-      $type->image = 'Noimage.jpg';
-      $type->description = '';
-      $type->save();
       //------------------------
 
       $type = new Type;
@@ -39,15 +31,7 @@ class TypeSeeder extends Seeder
 
       $type->title = 'Premium Quality';
       $type->slug = 'premium-quality';
-      $type->image = 'premium.png';
-      $type->description = '';
-      $type->save();
-
-      app()->setLocale('el');
-
-      $type->title = 'Εξαιρετική Ποιότητα';
-      $type->slug = 'eksairetiki-poiotita';
-      $type->image = 'premium.png';
+      $type->image = 'premium-quality-products.png';
       $type->description = '';
       $type->save();
       //-------------------------------
@@ -58,16 +42,9 @@ class TypeSeeder extends Seeder
 
       $type->title = 'Bio Products';
       $type->slug = 'bioproducts';
-      $type->image = 'bio.png';
+      $type->image = 'bio-products.png';
       $type->description = '';
       $type->save();
 
-      app()->setLocale('el');
-
-      $type->title = 'Βιολογικά Προϊόντα';
-      $type->slug = 'viologikaproionta';
-      $type->image = 'bio.png';
-      $type->description = '';
-      $type->save();
     }
 }

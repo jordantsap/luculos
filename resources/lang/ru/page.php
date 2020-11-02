@@ -6,7 +6,7 @@ return [
 
     // header.blade file menu items
     'ourvision' => 'Наша цель',
-    'products' => 'Продуктов',
+    'products' => 'Все продукты',
     'premiumquality' => 'Высший сорт',
     'bioproducts' => 'Биологические продукты',
     'pricelist' => 'Прейскурант',

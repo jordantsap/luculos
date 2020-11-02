@@ -5,6 +5,7 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 use App\Models\Category;
 use App\Models\Type;
+use App\Models\Product;
 
 class DataShareServiceProvider extends ServiceProvider
 {
@@ -36,5 +37,15 @@ class DataShareServiceProvider extends ServiceProvider
           $view->with('types', Type::withTranslation()->get());
 
       });
+
+      //   view()->composer('products.index', function ($view) {
+      //
+      //     $view->with('cats', Category::where('type_id', 1)->get());
+      //
+      //     $view->with('products', Product::where('type_id', 1)->paginate());
+      //
+      //       // return view('products.index', compact('cats', 'products'));
+      //
+      // });
     }
 }

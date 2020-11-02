@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+// use Request;
 Route::redirect('admin', 'admin/dashboard');
 Route::prefix('admin')->group(function () {
 
@@ -19,7 +19,7 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'home'])->name('hom
 
 Route::resource('products', ProductController::class);
 
-Route::get('categories/{category?}', [App\Http\Controllers\CategoryController::class, 'show'])->name('categories.show');
+Route::resource('categories', CategoryController::class);
 
 Route::get('types/{type?}', [App\Http\Controllers\TypeController::class, 'type'])->name('type');
 //below route not needd after changed above route name and delete the function in controller which holds the below endpoint

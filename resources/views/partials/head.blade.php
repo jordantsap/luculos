@@ -9,7 +9,7 @@
       type="image/png"
       href="{{ asset('favicon.png')}}">
 
-    <title>{{config('app.name') . ' | '}} @yield('title')</title>
+    <title>{{config('app.name') . ' | '}}@yield('title')</title>
 
     <meta name="description" content="@yield('description')">
     <meta name="keywords" content=' @yield('keywords')'>

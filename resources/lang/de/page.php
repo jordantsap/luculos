@@ -7,7 +7,7 @@ return [
     // header.blade file menu items
     'ourvision' => 'Unsere Vision',
     'premiumquality' => 'Premium Qualität',
-    'products' => 'Produkte',
+    'products' => 'Alle Produkte',
     'bioproducts' => 'Bio Produkte',
     'pricelist' => 'Preislisten',
     'contact' => 'Kontank',

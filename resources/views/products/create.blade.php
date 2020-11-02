@@ -1,216 +1,91 @@
-@extends('admin.layouts.app')
+@extends('layouts.user')
+
 
 @section('content')
+<!-- Content Wrapper. Contains page content -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
 
-<div class="content-wrapper">
-  <section class="content-header">
-    <h1>
-      Create New Product
-    </h1>
-  </section>
-  <section class="content">
 
-    <div class="box">
-      <form action="{{ route('product.store') }}" method="post" role="form" enctype="multipart/form-data">
-        {{ csrf_field() }}
-        <div class="box-body">
-        <div class="row">
-          <div class="col-xs-9">
-            <div class="form-group{{ $errors->has('title') ? ' has-error' : '' }}">
-              <label for="title">Ονομασία:</label>
-              @if ($errors->has('title'))
-                <strong class="text-danger">{{ $errors->first('title') }}</strong>
-              @endif
-              <div class="input-group">
-                <input type="text" value="{{ old('title') }}" class="form-control" name="title" placeholder="Ονομασία" required>
-                <span class="input-group-addon">
-                  <span class="glyphicon glyphicon-home"></span>
-                </span>
+          <!-- Content Header (Page header) -->
+          <section class="content-header">
+            <h1>
+              Δημιουργία Προϊόντος
+              {{-- <small>it all starts here</small> --}}
+            </h1>
+          </section>
+
+          <!-- Main content -->
+          <section class="content">
+
+            <!-- Default box -->
+            <div class="box">
+              <form method="POST" action="{{ route('products.store') }}" enctype="multipart/form-data">
+                @csrf
+                <div class="box-body">
+                  <div class="form-group{{ $errors->has('title') ? ' has-error' : '' }}">
+                      <label for="title" class="control-label">{{ __('Τίτλος') }}</label>
+                          <input id="title" type="text" class="form-control" name="title" value="{{ old('title') }}" required>
+
+                          @if ($errors->has('title'))
+                              <span class="help-block">
+                                  <strong>{{ $errors->first('title') }}</strong>
+                              </span>
+                          @endif
+                  </div>
+
+
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group{{ $errors->has('image') ? ' has-error' : '' }}">
+                        <label for="photos">Εικόνα</label>
+                        @if ($errors->has('image'))
+                          <strong class="text-danger">{{ $errors->first('image') }}</strong>
+                        @endif
+                        <div class="input-group">
+                          @if ( old('image'))
+                            <img src="{{ old('image') }}" alt="">
+                          @endif
+                          <input type="file" name="image" id="image" value="{{ old('image') }}">
+                        </div>
+                      </div>
+                    </div>
+
+                      <div class="col-sm-6">
+                        <label for="photos">Κατηγορία</label>
+                        <div class="row">
+                        @foreach ($categories->chunk(7) as $chunk)
+                              @foreach ($chunk as $category)
+                                  <div class="col-sm-4">
+                                    <input type="checkbox" name="category[]" value="{{ $category->id }}">
+                                    - {{ $category->title }}
+                                  </div>
+                              @endforeach
+                        @endforeach
+                      </div>
+                      </div>
+
+                  </div>
+
+                  <div class="form-group">
+                    <label for="description">Περιγραφή</label>
+                    <textarea class="textarea" name="description" placeholder="Place some text here" style="width: 100%; height:150px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" required>{{old('description')}}</textarea>
+                  </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-xs-3">
-            <div class="form-group{{ $errors->has('product_type') ? ' has-error' : '' }}">
-              <label for="product_type">Κατηγορία Προϊόντος</label>
-              @if ($errors->has('product_type'))
-                <strong class="text-danger">{{ $errors->first('product_type') }}</strong>
-              @endif
-              <div class="input-group">
-                <select id="product_type" value="{{ old('product_type') }}" name="product_type" class="form-control" required>
-                  <option value="">Επιλέξτε</option>
-                  @foreach($producttypes as $producttype)
-                    <option value="{{ $producttype->id }}">{{ $producttype->name }}</option>
-                  @endforeach
-                </select>
-                <span class="input-group-addon">
-                  <span class="glyphicon glyphicon-list"></span>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
+                <!-- /.box-body -->
 
-        <div class="form-group{{ $errors->has('meta_description') ? ' has-error' : '' }}">
-          <label for="meta_description">Meta Description:</label>
-          @if ($errors->has('meta_description'))
-            <strong class="text-danger">{{ $errors->first('meta_description') }}</strong>
-          @endif
-          <div class="input-group">
-            <input type="text" value="{{ old('meta_description') }}" class="form-control" name="meta_description" placeholder="meta_description" required>
-            <span class="input-group-addon">
-              <span class="glyphicon glyphicon-home"></span>
-            </span>
-          </div>
-        </div>
+              </form>
+            </div>
+            <!-- /.box -->
 
-        <div class="form-group{{ $errors->has('meta_keywords') ? ' has-error' : '' }}">
-          <label for="meta_keywords">Meta Keywords:</label>
-          @if ($errors->has('meta_keywords'))
-            <strong class="text-danger">{{ $errors->first('meta_keywords') }}</strong>
-          @endif
-          <div class="input-group">
-            <input type="text" value="{{ old('meta_keywords') }}" class="form-control" name="meta_keywords" placeholder="meta_keywords" required>
-            <span class="input-group-addon">
-              <span class="glyphicon glyphicon-home"></span>
-            </span>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-xs-3">
-            <div class="form-group">
-                <label for="active"> Active
-                  <input type="checkbox" name="active" value="1">
-                </label>
-            </div>
-          </div>
-          <div class="col-xs-3">
-            <div class="form-group{{ $errors->has('sku') ? ' has-error' : '' }}">
-              <label for="sku">Κωδικός Προϊόντος</label>
-              @if ($errors->has('sku'))
-                <strong class="text-danger">{{ $errors->first('sku') }}</strong>
-              @endif
-                <div class="input-group">
-                <input type="text" value="{{ old('sku') }}" class="form-control" name="sku" placeholder="Κωδικός Προϊόντος" required>
-                <span class="input-group-addon">
-                  <span class="glyphicon glyphicon-qrcode"></span>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-3">
-            <div class="form-group{{ $errors->has('price') ? ' has-error' : '' }}">
-              <label for="price">Τιμή</label>
-              @if ($errors->has('price'))
-                <strong class="text-danger">{{ $errors->first('price') }}</strong>
-              @endif
-                <div class="input-group">
-                <input type="text" value="{{ old('price') }}" class="form-control" name="price" placeholder="Τιμή" required>
-                <span class="input-group-addon">
-                  <span class="glyphicon glyphicon-euro"></span>
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xs-3">
-            <div class="form-group{{ $errors->has('company_id') ? ' has-error' : '' }}">
-              <label for="company_id">Εταιρεία</label>
-              @if ($errors->has('company_id'))
-                <strong class="text-danger">{{ $errors->first('company_id') }}</strong>
-              @endif
-              <div class="input-group">
-                <select id="company_id" value="{{ old('company_id') }}" name="company_id" class="form-control" required>
-                  <option value="">Επιλέξτε</option>
-                  @foreach(auth()->user()->companies as $company)
-                    <option value="{{ $company->id }}">{{ $company->title }}</option>
-                  @endforeach
-                </select>
-                <span class="input-group-addon">
-                  <span class="glyphicon glyphicon-list"></span>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="form-group{{ $errors->has('header') ? ' has-error' : '' }}">
-          <label for="header">header: </label>
-          @if ($errors->has('header'))
-            <strong class="text-danger">{{ $errors->first('header') }}</strong>
-          @endif
-          <input type="file" name="header" required>
-          <p class="help-block">Example block-level help text here.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-xs-3">
-            <div class="form-group{{ $errors->has('logo') ? ' has-error' : '' }}">
-              <label for="logo">Λογοτυπο: </label>
-              @if ($errors->has('logo'))
-                <strong class="text-danger">{{ $errors->first('logo') }}</strong>
-              @endif
-              <input type="file" name="logo" required>
-              <p class="help-block">Example block-level help text here.</p>
-            </div>
-          </div>
-          <div class="col-xs-3">
-            <div class="form-group{{ $errors->has('image1') ? ' has-error' : '' }}">
-              <label for="homeimage">Εικόνα 1: </label>
-              @if ($errors->has('image1'))
-                <strong class="text-danger">{{ $errors->first('image1') }}</strong>
-              @endif
-              <input type="file" name="image1" required>
-              <p class="help-block">Example block-level help text here.</p>
-            </div>
-          </div>
-          <div class="col-xs-3">
-            <div class="form-group{{ $errors->has('image2') ? ' has-error' : '' }}">
-              <label for="pageimage">Εικόνα 2: </label>
-              @if ($errors->has('image2'))
-                <strong class="text-danger">{{ $errors->first('image2') }}</strong>
-              @endif
-              <input type="file" name="image2" required>
-              <p class="help-block">Example block-level help text here.</p>
-            </div>
-          </div>
-          <div class="col-xs-3">
-            <div class="form-group{{ $errors->has('image3') ? ' has-error' : '' }}">
-              <label for="image3">Εικόνα 3: </label>
-              @if ($errors->has('image3'))
-                <strong class="text-danger">{{ $errors->first('image3') }}</strong>
-              @endif
-              <input type="file" name="image3" required>
-              <p class="help-block">Example block-level help text here.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="form-group{{ $errors->has('description') ? ' has-error' : '' }}">
-              <label for="description">Περιγραφή</label>
-              @if ($errors->has('description'))
-                <strong class="text-danger">{{ $errors->first('description') }}</strong>
-              @endif
-              <div class="input-group">
-                <textarea name="description" id="description" class="form-control"
-                  rows="5" required>{{ old('description') }}</textarea>
-                <span class="input-group-addon">
-                  <span class="glyphicon glyphicon-info-sign"></span>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary btn-block">Submit</button>
-      </form>
+          </section>
+          <!-- /.content -->
     </div>
   </div>
-    <!-- /.box -->
-
-  </section>
-  <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
 @endsection

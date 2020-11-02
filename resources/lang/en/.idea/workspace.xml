@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6e44bfa1-e0c7-45be-9266-34f7380158c3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.styleci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.styleci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../8RyLi_al_products.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Console/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Exceptions/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Http/Controllers/Auth/ConfirmPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Http/Controllers/Auth/ForgotPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Http/Controllers/Auth/VerificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Http/Controllers/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Http/Controllers/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Http/Controllers/ContactController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Http/Controllers/LanguageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Http/Controllers/LanguageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Http/Controllers/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Http/Controllers/PageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Http/Controllers/PriceListController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Http/Controllers/PriceListController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Http/Controllers/TypeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Http/Controllers/TypeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Http/Middleware/EncryptCookies.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Http/Middleware/EncryptCookies.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Http/Middleware/Language.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Http/Middleware/Language.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Http/Middleware/PreventRequestsDuringMaintenance.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Http/Middleware/PreventRequestsDuringMaintenance.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Http/Middleware/TrimStrings.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Http/Middleware/TrimStrings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Http/Middleware/TrustHosts.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Http/Middleware/TrustHosts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Http/Middleware/TrustProxies.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Http/Middleware/TrustProxies.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Models/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Models/CategoryTranslation.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Models/CategoryTranslation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Models/Page.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Models/Page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Models/PageTranslation.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Models/PageTranslation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Models/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Models/ProductTranslation.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Models/ProductTranslation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Models/Type.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Models/Type.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Models/TypeTranslation.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Models/TypeTranslation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Policies/ProductPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Policies/ProductPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Providers/BroadcastServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Providers/BroadcastServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Providers/DataShareServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Providers/DataShareServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Providers/EventServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bootstrap/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bootstrap/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bootstrap/cache/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bootstrap/cache/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../config/broadcasting.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../config/broadcasting.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../config/cache.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../config/cache.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../config/cors.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../config/cors.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../config/hashing.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../config/hashing.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../config/logging.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../config/logging.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../config/mail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../config/queue.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../config/queue.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../config/services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../config/session.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../config/sluggable.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../config/sluggable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../config/translatable.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../config/translatable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../config/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../config/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../database/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../database/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../database/migrations/2019_08_19_000000_create_failed_jobs_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../database/migrations/2020_10_26_223042_create_pages_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../database/migrations/2020_10_26_223042_create_pages_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../database/migrations/2020_10_26_223907_create_page_translations_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../database/migrations/2020_10_26_223907_create_page_translations_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../database/migrations/2020_10_26_231954_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../database/migrations/2020_10_26_231954_create_products_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../database/migrations/2020_10_26_232010_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../database/migrations/2020_10_26_232010_create_categories_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../database/migrations/2020_10_27_031517_create_types_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../database/migrations/2020_10_27_031517_create_types_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../database/migrations/2020_10_27_192749_create_category_translations_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../database/migrations/2020_10_27_192749_create_category_translations_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../database/migrations/2020_10_27_200108_create_type_translations_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../database/migrations/2020_10_27_200108_create_type_translations_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../database/migrations/2020_10_28_182420_create_product_translations_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../database/migrations/2020_10_28_182420_create_product_translations_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../database/migrations/2020_10_29_185934_create_category_product_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../database/migrations/2020_10_29_185934_create_category_product_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../database/seeders/CategoryProductSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../database/seeders/CategoryProductSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../database/seeders/CategorySeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../database/seeders/CategorySeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../database/seeders/PageSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../database/seeders/PageSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../database/seeders/ProductSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../database/seeders/ProductSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../database/seeders/TypeSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../database/seeders/TypeSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../database/seeders/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../database/seeders/UserSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../database/seeders/onlineDBSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../database/seeders/onlineDBSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/Exports-image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/Exports-image.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/Exports-image.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/Exports-image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/Exports-image1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/Exports-image1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/Noimage.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/Noimage.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/best-price.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/best-price.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/bgimg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/bgimg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/bio-dairy.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/bio-dairy.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/bio-honey.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/bio-honey.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/bio-olive_oil__.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/bio-olive_oil__.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/bio-olives.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/bio-olives.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/bio-wine.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/bio-wine.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/bio.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/bio.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/biosauces.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/biosauces.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/closed.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/closed.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/contact-us.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/contact-us.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/dairy.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/dairy.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/errorpage.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/errorpage.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/gree-prod.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/gree-prod.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/greek-pasta.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/greek-pasta.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/greekfood.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/honey.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/honey.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/olive_oil__.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/olive_oil__.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/olives.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/olives.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/premium-dairy.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/premium-dairy.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/premium-greek-pasta.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/premium-greek-pasta.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/premium-honey.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/premium-honey.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/premium-quality.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/premium-quality.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/premium.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/premium.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/premiumoliveoil.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/premiumoliveoil.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/premiumolives.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/premiumolives.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/premiumsauces.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/premiumsauces.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/premiumwine.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/premiumwine.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/akratos.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/akratos.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/apocalypsis.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/apocalypsis.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/begleri-bio-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/begleri-bio-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/begleri.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/begleri.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/dellagrazia-extra-virgin-olive-oil.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/dellagrazia-extra-virgin-olive-oil.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/lagyros-bio.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/lagyros-bio.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/melisandy.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/melisandy.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/mixcheese.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/mixcheese.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/papayiannidi-forest-fruits-honey.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/papayiannidi-forest-fruits-honey.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/papayiannidi-orange-tangerine-lemon.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/papayiannidi-orange-tangerine-lemon.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/papayiannidi-peach-ouzo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/papayiannidi-peach-ouzo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/papayiannidi-raspberry-ouzo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/papayiannidi-raspberry-ouzo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/papayiannidi-strawberry-chocolate.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/papayiannidi-strawberry-chocolate.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/papayiannidi-tomato-aubergine.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/papayiannidi-tomato-aubergine.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/papayiannidi-tomato-balsamic-vinegard-peppers.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/papayiannidi-tomato-balsamic-vinegard-peppers.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/papayiannidi-tomato-basil.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/papayiannidi-tomato-basil.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/papayiannidi-tomato-olives-ouzo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/papayiannidi-tomato-olives-ouzo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/papayiannidi-tomato-orange.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/papayiannidi-tomato-orange.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/papayiannidi-tomato-spicy.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/papayiannidi-tomato-spicy.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/rose-bio.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/rose-bio.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/thaseon-gi-chilli-pepper.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/thaseon-gi-chilli-pepper.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/thaseon-gi-garlic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/thaseon-gi-garlic.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/thaseon-gi-lemon.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/thaseon-gi-lemon.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/thaseon-gi-orange.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/thaseon-gi-orange.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/thaseon-gi-oregano.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/thaseon-gi-oregano.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/thaseon-gi-oregano2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/thaseon-gi-oregano2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/thaseon-gi-rosemary.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/thaseon-gi-rosemary.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/thaseon-gi-safran.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/thaseon-gi-safran.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/thaseon-gi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/thaseon-gi.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/thrakiotiki-zimi-chilopitaki.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/thrakiotiki-zimi-chilopitaki.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/thrakiotiki-zimi-mac.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/thrakiotiki-zimi-mac.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/thrakiotiki-zimi-orzo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/thrakiotiki-zimi-orzo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/thrakiotiki-zimi-pligouri.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/thrakiotiki-zimi-pligouri.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/thrakiotiki-zimi-sterile-trachana.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/thrakiotiki-zimi-sterile-trachana.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/thrakiotiki-zimi-trachana-with-milk-sweet.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/thrakiotiki-zimi-trachana-with-milk-sweet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/thrakiotiki-zimi-trachana-with-vegetables-sweet.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/thrakiotiki-zimi-trachana-with-vegetables-sweet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/thrakiotiki-zimi-trachana-with-yogurt-sweet.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/thrakiotiki-zimi-trachana-with-yogurt-sweet.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/thrakiotiki-zimi-trachana-with-yogurt-sweet.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/thrakiotiki-zimi-trachana-with-yogurt-sweet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/thrakiotiki-zimi-unsold-wheat.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/thrakiotiki-zimi-unsold-wheat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/thrakiotiki-zimi-vides.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/thrakiotiki-zimi-vides.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/traxanas-me-giaourti-ksinos.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/traxanas-me-giaourti-ksinos.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/traxanas-starenios.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/traxanas-starenios.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/products/viston-bio-red-wine.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/products/viston-bio-red-wine.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/sauces2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/sauces2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/sauces2.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/sauces2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/vision.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/vision.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../public/images/wine.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../public/images/wine.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../de/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/../de/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../de/meta.php" beforeDir="false" afterPath="$PROJECT_DIR$/../de/meta.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../de/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/../de/page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../de/pagination.php" beforeDir="false" afterPath="$PROJECT_DIR$/../de/pagination.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../de/passwords.php" beforeDir="false" afterPath="$PROJECT_DIR$/../de/passwords.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../de/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/../de/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../de/validation-inline.php" beforeDir="false" afterPath="$PROJECT_DIR$/../de/validation-inline.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../de/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/../de/validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../de/vision.php" beforeDir="false" afterPath="$PROJECT_DIR$/../de/vision.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meta.php" beforeDir="false" afterPath="$PROJECT_DIR$/meta.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pagination.php" beforeDir="false" afterPath="$PROJECT_DIR$/pagination.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/passwords.php" beforeDir="false" afterPath="$PROJECT_DIR$/passwords.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vision.php" beforeDir="false" afterPath="$PROJECT_DIR$/vision.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ru/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ru/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ru/meta.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ru/meta.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ru/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ru/page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ru/pagination.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ru/pagination.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ru/passwords.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ru/passwords.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ru/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ru/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ru/validation-inline.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ru/validation-inline.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ru/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ru/validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ru/vision.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ru/vision.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../views/auth/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../views/auth/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../views/auth/passwords/confirm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../views/auth/passwords/confirm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../views/auth/passwords/email.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../views/auth/verify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../views/auth/verify.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../views/categories/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../views/categories/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../views/categories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../views/categories/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../views/categories/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../views/categories/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../views/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../views/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../views/layouts/public.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../views/layouts/public.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../views/layouts/user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../views/layouts/user.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../views/news/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../views/news/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../views/our-vision.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../views/our-vision.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../views/partials/alerts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../views/partials/alerts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../views/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../views/partials/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../views/partials/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../views/partials/head.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../views/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../views/partials/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../views/partials/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../views/partials/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../views/partials/top-header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../views/partials/top-header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../views/pricelist.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../views/pricelist.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../views/products/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../views/products/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../views/products/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../views/products/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../views/products/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../views/products/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../views/products/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../views/products/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../views/types/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../views/types/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../views/types/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../views/types/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../routes/channels.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../routes/channels.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../routes/console.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../routes/console.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../seeder.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../seeder.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../server.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../server.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../tests/CreatesApplication.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../tests/CreatesApplication.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../tests/Feature/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../tests/Feature/ExampleTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../tests/TestCase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../tests/Unit/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../tests/Unit/ExampleTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../webpack.mix.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1jipstL8vrzZhK73VcommkzqP7a" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e44bfa1-e0c7-45be-9266-34f7380158c3" name="Default Changelist" comment="" />
+      <created>1604296980411</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604296980411</updated>
+      <workItem from="1604296985156" duration="14000" />
+    </task>
+    <servers />
+  </component>
+</project>

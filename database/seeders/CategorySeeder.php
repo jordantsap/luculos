@@ -55,7 +55,7 @@ class CategorySeeder extends Seeder
 
       $category->title = 'Sauces';
       $category->slug = 'sauces';
-      $category->image = 'sauces2.png';
+      $category->image = 'sauces.png';
       $category->description = '';
       $category->type_id = 1;
       $category->save();
@@ -64,7 +64,7 @@ class CategorySeeder extends Seeder
 
       $category->title = 'Σάλτσες';
       $category->slug = 'saltses';
-      $category->image = 'sauces2.png';
+      $category->image = 'sauces.png';
       $category->description = '';
       $category->type_id = 1;
       $category->save();
@@ -73,7 +73,7 @@ class CategorySeeder extends Seeder
 
       $category->title = 'Saucen';
       $category->slug = 'saucen';
-      $category->image = 'sauces2.png';
+      $category->image = 'sauces.png';
       $category->description = '';
       $category->type_id = 1;
       $category->save();
@@ -82,7 +82,7 @@ class CategorySeeder extends Seeder
 
       $category->title = 'Соусы';
       $category->slug = 'cоусы';
-      $category->image = 'sauces2.png';
+      $category->image = 'sauces.png';
       $category->description = '';
       $category->type_id = 1;
       $category->save();
@@ -94,7 +94,7 @@ class CategorySeeder extends Seeder
 
       $category->title = 'Olive Oil';
       $category->slug = 'olive-oil';
-      $category->image = 'olive_oil__.jpg';
+      $category->image = 'oliveoil.jpg';
       $category->description = '';
       $category->type_id = 1;
       $category->save();
@@ -103,7 +103,7 @@ class CategorySeeder extends Seeder
 
       $category->title = 'Ελαιόλαδο';
       $category->slug = 'elaiolado';
-      $category->image = 'olive_oil__.jpg';
+      $category->image = 'oliveoil.jpg';
       $category->description = '';
       $category->type_id = 1;
       $category->save();
@@ -112,7 +112,7 @@ class CategorySeeder extends Seeder
 
       $category->title = 'Olivenöl';
       $category->slug = 'olivenöl';
-      $category->image = 'olive_oil__.jpg';
+      $category->image = 'oliveoil.jpg';
       $category->description = '';
       $category->type_id = 1;
       $category->save();
@@ -121,7 +121,7 @@ class CategorySeeder extends Seeder
 
       $category->title = 'Оливковое масло';
       $category->slug = 'oливковое-масло';
-      $category->image = 'olive_oil__.jpg';
+      $category->image = 'oliveoil.jpg';
       $category->description = '';
       $category->type_id = 1;
       $category->save();
@@ -562,25 +562,17 @@ class CategorySeeder extends Seeder
 
         $category->title = 'Premium Olive Oil';
         $category->slug = 'premium-olive-oil';
-        $category->image = 'premiumoliveoil.jpg';
+        $category->image = 'premium-olive-oil.jpg';
         $category->description = '';
         $category->type_id = 2;
         $category->save();
 
-        app()->setLocale('el');
-
-        $category->title = 'Εξαιρετικής πoιότητας ελαιόλαδο';
-        $category->slug = 'eksairetikis-poiotitas-elaiolado';
-        $category->image = 'premiumoliveoil.jpg';
-        $category->description = '';
-        $category->type_id = 2;
-        $category->save();
 
         app()->setLocale('de');
 
         $category->title = 'Premium Olivenöl';
         $category->slug = 'premium-olivenöl';
-        $category->image = 'premiumoliveoil.jpg';
+        $category->image = 'premium-olive-oil.jpg';
         $category->description = '';
         $category->type_id = 2;
         $category->save();
@@ -589,7 +581,7 @@ class CategorySeeder extends Seeder
 
         $category->title = 'Оливковое масло премиум-класса';
         $category->slug = 'Оливковое-масло-премиум-класса';
-        $category->image = 'premiumoliveoil.jpg';
+        $category->image = 'premium-olive-oil.jpg';
         $category->description = '';
         $category->type_id = 2;
         $category->save();

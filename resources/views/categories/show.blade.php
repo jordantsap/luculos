@@ -1,8 +1,8 @@
 @extends('layouts.public')
 
-@section('title', $cat->title . ' ' . __('meta.catproducts'))
-@section('description', $cat->title . ' ' . __('meta.catproducts_description'))
-@section('keywords', $cat->title . ' ' . __('meta.catproducts_keywords'))
+@section('title', __('meta.categorytitle'))
+@section('description', $cat->title . ' ' . __('meta.categorydescription'))
+@section('keywords', $cat->title . ', ' . __('meta.categorykeywords'))
 
 @section('content')
 
@@ -12,10 +12,10 @@
 
     {{-- @foreach ($cats as $cat) --}}
       <div class="col-sm-12">
-        <h1 class="category-title text-center">
+        <h1 class="category-title">
           {{__("page.category") . ' ' . $cat->title}}
         </h1>
-        <img src="{{ asset('images/' . $cat->image) ? : asset('images.Noimage.jpg')}}" width="100%" height="350" alt="{{$cat->title}}">
+        <img src="{{ asset('images/categories/' . $cat->image) ? : asset('images.Noimage.jpg')}}" width="auto" height="350px" alt="{{$cat->title}}">
     </div>
 
 
@@ -28,27 +28,11 @@
 
     @if(count($cat->products) > 0)
       @foreach($cat->products as $product)
-        <div class="col-sm-3">
-          <ul class="list-group">
+        <div class="col-sm-2">
             <a href="{{route('products.show', $product->slug) }}" class="btn btn-default btn-block">
-            <li class="list-group-item">
-              <h2 class="text-center" >{{ Str::limit($product->title, 20)}}</h2>
-            </li>
-            <li class="list-group-item">
-              <img src="{{ asset('images/'.$product->image) }}" width="100%" height="100px" alt="{{$product->title}}" title"{{$product->title}}">
-            </li>
-          </a>
-
-          <li class="list-group-item">
-
-            <h3>{!!Str::limit($product->description, 20)!!}</h3>
-          </li>
-          <li class="list-group-item">
-            <a href="{{route('products.show', $product->slug) }}" class="btn btn-default btn-block">
-              {{$product->title}}
+            <img class="text-center" src="{{ asset('images/products/'.$product->image) }}" width="70%" height="120x" alt="{{$product->title}}" title"{{$product->title}}">
+              <h3 class="product-title text-center"> {{$product->title}} </h3>
             </a>
-          </li>
-          </ul>
         </div>
       @endforeach
     @else

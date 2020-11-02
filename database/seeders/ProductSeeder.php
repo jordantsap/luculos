@@ -28,30 +28,30 @@ Dellagrazia Extra Virgin Olive Oil has a golden-green hue, a balanced spicy tast
 The integrated cultivation and harvesting methods in combination with modern production and storage methods ensure its special characteristics and superior quality.';
       $product->box = 1;
       $product->palette = 40;
-      $product->categories()->sync([3]);
       $product->type_id = 3;
       $product->save();
+      $product->categories()->sync([3]);
 
       app()->setLocale('de');
 
       $product->title = 'Natives Olivenöl Extra von Dellagrazia';
       $product->slug = 'natives-olivenol-extra-von-dellagrazia';
-      $product->image = 'Noimage.jpg';
+      $product->image = 'dellagrazia-extra-virgin-olive-oil.jpg';
       $product->description = 'Natives Olivenöl Extra von Dellagrazia ist ein kaltgepresstes Produkt. Unsere Olivenbäume wachsen auf der sonnigen Insel Syros. Die Olivenplantage befindet sich im Südwesten der Insel an einer Küstenlage. Die Frucht nimmt alle vorteilhaften Eigenschaften der Seeluft auf.
 Natives Olivenöl Extra von Dellagrazia enthält Eigenschaften, die die Qualität von Olivenöl bestimmen, wie ein reiches fruchtiges Aroma und einen erfrischenden Geschmack sowie eine starke antioxidative Wirkung.
 Natives Olivenöl Extra von Dellagrazia hat einen goldgrünen Farbton, einen ausgewogenen, würzigen Geschmack mit einem süßen, leichten Nachgeschmack, der anhält. Sein wunderbar fruchtiges Aroma mit einem Hauch von Birne und Mandel ist auf die Olivenbaumsorte "Koroneiki" zurückzuführen, aus der es hergestellt wird.
 Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktions- und Lagermethoden gewährleisten die besonderen Eigenschaften und die überlegene Qualität.';
       $product->box = 1;
       $product->palette = 56;
-      $product->categories()->sync([3]);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([3]);
 
       app()->setLocale('ru');
 
       $product->title = 'Dellagrazia Extra Virgin Оливковое масло';
       $product->slug = 'dellagrazia-extra-virgin-оливковое-масло';
-      $product->image = 'dellagrazia-extra-virgin-оливковое-масло.jpg';
+      $product->image = 'dellagrazia-extra-virgin-olive-oil.jpg';
       $product->description = 'Dellagrazia Extra Virgin Olive Oil - продукт холодного отжима. Наши оливковые деревья выращиваются на солнечном острове Сирос. Живая роща расположена на юго-западе острова в прибрежном месте. Плод поглощает все полезные свойства морского воздуха.
 Оливковое масло Dellagrazia Extra Virgin содержит характеристики, которые определяют качество оливкового масла, такие как богатый фруктовый аромат и освежающий вкус, а также мощный антиоксидантный эффект.
 Оливковое масло Dellagrazia Extra Virgin имеет золотисто-зеленый оттенок, сбалансированный пряный вкус с продолжительным сладким легким послевкусием. Его замечательный фруктовый аромат с нотками груши и миндаля обусловлен сортом оливкового дерева "Koroneiki", из которого он производится.
@@ -59,9 +59,9 @@ Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktion
 
       $product->box = 1;
       $product->palette = 67;
-      $product->categories()->sync([3]);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([3]);
       //---------elproduct1---------------
 
       $product = new Product;
@@ -70,14 +70,14 @@ Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktion
 
       $product->title = 'Thrakiotiki zimi - Unsold wheat';
       $product->slug = 'thrakiotiki-zimi-unsold-wheat';
-      $product->image = 'premium.png';
+      $product->image = 'thrakiotiki-zimi-unsold-wheat.png';
       $product->description = '';
 
       $product->box = 1;
       $product->palette = 77;
-      $product->categories()->sync(4);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([4]);
 
 
       // app()->setLocale('de');
@@ -118,9 +118,9 @@ Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktion
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync(4);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([4]);
 
 
       $product = new Product;
@@ -134,9 +134,9 @@ Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktion
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync(4);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([4]);
 
 
       $product = new Product;
@@ -150,9 +150,9 @@ Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktion
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync(4);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([4]);
   //---------------------------------------------------
 
       $product = new Product;
@@ -166,9 +166,9 @@ Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktion
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync(4);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([4]);
 
 
       $product = new Product;
@@ -182,9 +182,9 @@ Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktion
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync(4);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([4]);
 
 
       $product = new Product;
@@ -193,14 +193,14 @@ Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktion
 
       $product->title = 'Thrakiotiki zimi - Trachana with yogurt (Sweet)';
       $product->slug = 'thrakiotiki-zimi-trachana-with-yogurt-sweet';
-      $product->image = 'thrakiotiki-zimi-trachana-with-yogurt-sweet';
+      $product->image = 'thrakiotiki-zimi-trachana-with-yogurt-sweet.png';
       $product->description = '';
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync(4);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([4]);
       //-----------------------------
 
       $product = new Product;
@@ -214,9 +214,9 @@ Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktion
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync(4);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([4]);
 
 
       $product = new Product;
@@ -230,9 +230,9 @@ Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktion
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync(4);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([4]);
 
 
       $product = new Product;
@@ -246,9 +246,9 @@ Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktion
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync(4);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([4]);
 
 
       $product = new Product;
@@ -257,14 +257,14 @@ Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktion
 
       $product->title = 'Papayiannidi - Strawberry & chocolate';
       $product->slug = 'papayiannidi-strawberry-chocolate';
-      $product->image = 'papayiannidi-strawberry-chocolate.png';
+      $product->image = 'papayiannidi-strawberry-chocolate.jpg';
       $product->description = '';
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync(2);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([2]);
 
 
       $product = new Product;
@@ -273,14 +273,14 @@ Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktion
 
       $product->title = 'Papayiannidi - Forest fruits & honey';
       $product->slug = 'papayiannidi-forest-fruits-honey';
-      $product->image = 'papayiannidi-forest-fruits-honey.png';
+      $product->image = 'papayiannidi-forest-fruits-honey.jpg';
       $product->description = '';
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync(2);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([2]);
 
 
       $product = new Product;
@@ -289,14 +289,14 @@ Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktion
 
       $product->title = 'Papayiannidi - Tomato, olives & ouzo';
       $product->slug = 'papayiannidi-tomato-olives-ouzo';
-      $product->image = 'papayiannidi-tomato-olives-ouzo.png';
+      $product->image = 'papayiannidi-tomato-olives-ouzo.jpg';
       $product->description = '';
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync(2);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([2]);
 
 
       $product = new Product;
@@ -310,9 +310,9 @@ Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktion
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync(2);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([2]);
 
 
       $product = new Product;
@@ -326,9 +326,9 @@ Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktion
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync(2);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([2]);
 
 
       $product = new Product;
@@ -342,9 +342,9 @@ Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktion
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync(2);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([2]);
 
 
       $product = new Product;
@@ -358,9 +358,9 @@ Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktion
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync(2);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([2]);
 
 
       $product = new Product;
@@ -369,14 +369,14 @@ Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktion
 
       $product->title = 'Papayiannidi - Tomato, spicy';
       $product->slug = 'papayiannidi-tomato-spicy';
-      $product->image = 'papayiannidi-tomato-spicy.png';
+      $product->image = 'papayiannidi-tomato-spicy.jpg';
       $product->description = '';
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync(2);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([2]);
 
 
       $product = new Product;
@@ -390,9 +390,9 @@ Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktion
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync(2);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([2]);
 
 
       $product = new Product;
@@ -406,9 +406,9 @@ Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktion
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync(2);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([2]);
 
 
       $product = new Product;
@@ -422,9 +422,9 @@ Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktion
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync(2);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([2]);
 
 
       $product = new Product;
@@ -438,9 +438,9 @@ Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktion
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync([3]);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([3]);
 
 
       $product = new Product;
@@ -454,9 +454,9 @@ Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktion
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync([3]);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([3]);
 
 
       $product = new Product;
@@ -470,9 +470,9 @@ Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktion
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync([3]);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([3]);
 
 
       $product = new Product;
@@ -486,9 +486,9 @@ Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktion
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync([3]);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([3]);
 
 
       $product = new Product;
@@ -502,9 +502,9 @@ Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktion
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync([3]);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([3]);
 
 
       $product = new Product;
@@ -518,9 +518,9 @@ Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktion
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync([3]);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([3]);
 
 
       $product = new Product;
@@ -534,9 +534,10 @@ Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktion
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync([3]);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([3]);
+      //////////////////////////////////////----------------------
 
       $product = new Product;
 
@@ -549,9 +550,9 @@ Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktion
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync([3]);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([3]);
 
       $product = new Product;
 
@@ -559,7 +560,7 @@ Die integrierten Anbau- und Erntemethoden in Kombination mit modernen Produktion
 
       $product->title = 'Lagyros -BIO';
       $product->slug = 'lagyrosbio';
-      $product->image = 'lagyros.png';
+      $product->image = 'lagyros-bio.png';
       $product->description = 'Organic red wine – dry
 Ikaria: Protected Designation of Origin
 The lively variety Fokiano and the luscious Kountouro (Mandilaria) combine their virtues in a ruby red wine, with aromas of wildflowers and black fruits, with a full flavor and a long aftertaste.
@@ -567,16 +568,16 @@ Its special character, at 15 – 17 ° C, seeks fried meat and red dishes of Med
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync([1,8]);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([1,8]);
 
 
       app()->setLocale('de');
 
       $product->title = 'Lagyros -BIO';
       $product->slug = 'lagyrosde';
-      $product->image = 'lagyros.png';
+      $product->image = 'lagyros-bio.png';
       $product->description = 'Biologischer Rotwein – Trocken
 
 Ikaria: Geschützte Ursprungsbezeichnung
@@ -587,15 +588,15 @@ Sein besonderer Charakter, bei 15 – 17 °C, sucht gebratenes Fleisch und rote 
 
       $product->box = 1;
       $product->palette = 79;
-      $product->categories()->sync([1,8]);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([1,8]);
 
       app()->setLocale('ru');
 
       $product->title = 'Lagyros -BIO';
       $product->slug = 'lagyrosru';
-      $product->image = 'lagyros.png';
+      $product->image = 'lagyros-bio.png';
       $product->box = 1;
       $product->palette = 50;
       $product->description = 'ЛАГИРОС
@@ -612,9 +613,9 @@ Sein besonderer Charakter, bei 15 – 17 °C, sucht gebratenes Fleisch und rote 
 
 Идельно сочетается с блюдами Средиземной кухни.';
 
-      $product->categories()->sync([1,8]);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([1,8]);
 
       $product = new Product;
 
@@ -622,7 +623,7 @@ Sein besonderer Charakter, bei 15 – 17 °C, sucht gebratenes Fleisch und rote 
 
       $product->title = 'Begleri - BIO';
       $product->slug = 'begleri';
-      $product->image = 'begleri.jpg';
+      $product->image = 'begleri-bio.jpg';
       $product->description = 'Organic white wine – dry
 Ikaria: Protected Designation of Origin
 A special wine of the local variety Begleri.
@@ -632,16 +633,16 @@ Enjoy at 8-10 ° C with fish or white meat dishes';
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync([1,8]);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([1,8]);
 
 
       app()->setLocale('de');
 
       $product->title = 'Begleri — BIO';
       $product->slug = 'begleri-bio-2';
-      $product->image = 'begleri-bio-2.jpg';
+      $product->image = 'begleri-bio.jpg';
       $product->description = 'Biologischer Weißwein – Trocken
 
 Ikaria: Geschützte Ursprungsbezeichnung
@@ -656,15 +657,15 @@ Genießen Sie bei 8-10 °C mit Fisch oder weiße Fleischgerichte. 750 ml';
 
       $product->box = 1;
       $product->palette = 79;
-      $product->categories()->sync([1,8]);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([1,8]);
 
       app()->setLocale('ru');
 
       $product->title = 'Begleri — BIO';
       $product->slug = 'begleri-bio-2ru';
-      $product->image = 'begleri-bio-2.jpg';
+      $product->image = 'begleri-bio.jpg';
       $product->box = 1;
       $product->palette = 50;
       $product->description = 'БЕГЛЕРИ
@@ -685,9 +686,9 @@ Genießen Sie bei 8-10 °C mit Fisch oder weiße Fleischgerichte. 750 ml';
 
 Наслаждайтесь им ,охлажденным до 8-10 ° C.';
 
-      $product->categories()->sync([1,8]);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([1,8]);
 
       $product = new Product;
 
@@ -705,9 +706,9 @@ It is drunk at 8-10 ° C.';
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync([1,8]);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([1,8]);
 
       app()->setLocale('de');
 
@@ -724,9 +725,9 @@ Es wird bei 8-10 °C getrunken. 750 ml';
 
       $product->box = 1;
       $product->palette = 79;
-      $product->categories()->sync([1,8]);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([1,8]);
 
       app()->setLocale('ru');
 
@@ -749,9 +750,9 @@ Es wird bei 8-10 °C getrunken. 750 ml';
 
 Наслаждайтесь этим вином,охлаженным до 8-10 ° C.';
 
-      $product->categories()->sync([1,8]);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([1,8]);
       ////-------------------------------------------------
 
       $product = new Product;
@@ -775,9 +776,9 @@ Genießen Sie  bei 16 – 18 °C mit Käse oder roten Gerichten der mediterrane
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync([1,8]);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([1,8]);
 
       app()->setLocale('de');
 
@@ -791,9 +792,9 @@ Genießen Sie  bei 16 – 18 °C mit Käse oder roten Gerichten der mediterrane
 
       $product->box = 1;
       $product->palette = 79;
-      $product->categories()->sync([1,8]);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([1,8]);
 
       app()->setLocale('ru');
 
@@ -816,9 +817,9 @@ Genießen Sie  bei 16 – 18 °C mit Käse oder roten Gerichten der mediterrane
 
 Подается к мясным блюдам и к закускам из сыров.';
 
-      $product->categories()->sync([1,8]);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([1,8]);
       /////-----------------------------------------------
 
       $product = new Product;
@@ -844,9 +845,9 @@ Bei 12-14 °C wird er ideal mit Schokoladentorten oder roten Obstkuchen kombinie
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync([1,8]);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([1,8]);
 
 
       app()->setLocale('de');
@@ -862,9 +863,9 @@ Bei 12-14 °C wird er ideal mit Schokoladentorten oder roten Obstkuchen kombinie
 
       $product->box = 1;
       $product->palette = 79;
-      $product->categories()->sync([1,8]);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([1,8]);
 
       app()->setLocale('ru');
 
@@ -891,58 +892,10 @@ Bei 12-14 °C wird er ideal mit Schokoladentorten oder roten Obstkuchen kombinie
 
 При 12-14˚C вино идеально сочетается со сладкими блюдами и десертом.';
 
-      $product->categories()->sync([1, 8]);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([1, 8]);
       ////-----------------------------------------
-
-
-      $product = new Product;
-
-      app()->setLocale('en');
-
-      $product->title = 'Apocalypsis -BIO';
-      $product->slug = 'apocalypsis';
-      $product->image = 'apocalypsis.jpg';
-      $product->description = 'This wine is a masterly blend of the Greek variety Mavroudi of Thrace at eighty-five percent and Merlot at fifteen percent. The grapes have matured perfectly and healthy. Their early morning harvest and their promotion to the winery within one hour makes wine making possible right after grape picking. In the application of the classic red winemaking with long extraction, the following stages are followed: Harvesting grapes, stalking and mincing, without being pressed. This leads to an exceptional quality wine. The temperature of the alcoholic fermentation is kept strictly at 26 C in automatic vatifiers of five tons and the fermentation takes place in oak barrels';
-
-      $product->box = 1;
-      $product->palette = 68;
-      $product->categories()->sync([1, 8]);
-      $product->type_id = 1;
-      $product->save();
-
-
-      app()->setLocale('de');
-
-      $product->title = 'Apocalypsis -BIO';
-      $product->slug = 'apocalypsisde';
-      $product->image = 'apocalypsis.jpg';
-      $product->description = 'Dieser Wein ist eine meisterhafte Mischung aus der griechischen Sorte Mavroudi von Thrakien mit fünfundachtzig Prozent und von Merlot mit fünfzehn Prozent. Die Trauben sind perfekt und gesund gereift. Ihre Ernte am frühen Morgen und ihre Beförderung zum Weingut innerhalb einer Stunde  macht die Weinbereitung direkt nach der Traubenaufnahme möglich. Bei der Anwendung der klassischen roten Weinbereitung mit langer Extraktion werden folgenden Stufen verfolgt: Trauben ernten, entstielen und zerkleinern, ohne gepresst zu werden. Das  führt zu einem außergewöhnlichen Qualitätswein. Die Temperatur der alkoholischen Gärung wird streng auf 26 C in automatischen Vinifikatoren von fünf Tonnen gehalten und die Fermentation findet in Eichenfässer statt.';
-
-      $product->box = 1;
-      $product->palette = 79;
-      $product->categories()->sync(1,8);
-      $product->type_id = 1;
-      $product->save();
-
-      app()->setLocale('ru');
-
-      $product->title = 'Apocalypsis -BIO';
-      $product->slug = 'apocalypsisru';
-      $product->image = 'apocalypsis.jpg';
-      $product->box = 1;
-      $product->palette = 50;
-      $product->description = 'АПОКАЛИПСИС
-
-Это вино – виртуозная смесь греческого фракийского сорта Мавроуди и сорта Мерло.Из винограда высокого качества,хорошо созревшего. Урожай собирается рано утром и перевозка в винодельню происходит ровно через час после сбора.
-
-Применение классической красной винификации с длительной экстракцией происходит по следующим шагам: сбор урожая винограда, дестабилизация и дробление без давления. Таким образом мы достигаем превосходного качества вина, которое вы видите, и вы можете им насладиться. Температура алкогольной ферментации строго контролируется на уровне 26 градусов и производится в автоматических виноделах по 5 тонн и происходит ферментация в дубовых бочках.';
-
-      $product->categories()->sync(1,8);
-      $product->type_id = 1;
-      $product->save();
-      //------------------------------------
 
       $product = new Product;
 
@@ -955,9 +908,9 @@ Bei 12-14 °C wird er ideal mit Schokoladentorten oder roten Obstkuchen kombinie
 
       $product->box = 1;
       $product->palette = 68;
-      $product->categories()->sync([1,8]);
       $product->type_id = 1;
       $product->save();
+      $product->categories()->sync([1,8]);
 
       // app()->setLocale('de');
       //
@@ -984,6 +937,55 @@ Bei 12-14 °C wird er ideal mit Schokoladentorten oder roten Obstkuchen kombinie
       // $product->categories()->sync(1,8);
       // $product->type_id = 1;
       // $product->save();
+      //-----------------------------------
+
+      $product = new Product;
+
+      app()->setLocale('en');
+
+      $product->title = 'Apocalypsis -BIO';
+      $product->slug = 'apocalypsis';
+      $product->image = 'apocalypsis.jpg';
+      $product->description = 'This wine is a masterly blend of the Greek variety Mavroudi of Thrace at eighty-five percent and Merlot at fifteen percent. The grapes have matured perfectly and healthy. Their early morning harvest and their promotion to the winery within one hour makes wine making possible right after grape picking. In the application of the classic red winemaking with long extraction, the following stages are followed: Harvesting grapes, stalking and mincing, without being pressed. This leads to an exceptional quality wine. The temperature of the alcoholic fermentation is kept strictly at 26 C in automatic vatifiers of five tons and the fermentation takes place in oak barrels';
+
+      $product->box = 1;
+      $product->palette = 68;
+      $product->type_id = 1;
+      $product->save();
+      $product->categories()->sync([1, 8]);
+
+
+      app()->setLocale('de');
+
+      $product->title = 'Apocalypsis -BIO';
+      $product->slug = 'apocalypsisde';
+      $product->image = 'apocalypsis.jpg';
+      $product->description = 'Dieser Wein ist eine meisterhafte Mischung aus der griechischen Sorte Mavroudi von Thrakien mit fünfundachtzig Prozent und von Merlot mit fünfzehn Prozent. Die Trauben sind perfekt und gesund gereift. Ihre Ernte am frühen Morgen und ihre Beförderung zum Weingut innerhalb einer Stunde  macht die Weinbereitung direkt nach der Traubenaufnahme möglich. Bei der Anwendung der klassischen roten Weinbereitung mit langer Extraktion werden folgenden Stufen verfolgt: Trauben ernten, entstielen und zerkleinern, ohne gepresst zu werden. Das  führt zu einem außergewöhnlichen Qualitätswein. Die Temperatur der alkoholischen Gärung wird streng auf 26 C in automatischen Vinifikatoren von fünf Tonnen gehalten und die Fermentation findet in Eichenfässer statt.';
+
+      $product->box = 1;
+      $product->palette = 79;
+      $product->type_id = 1;
+      $product->save();
+      $product->categories()->sync([1,8]);
+
+      app()->setLocale('ru');
+
+      $product->title = 'Apocalypsis -BIO';
+      $product->slug = 'apocalypsisru';
+      $product->image = 'apocalypsis.jpg';
+      $product->box = 1;
+      $product->palette = 50;
+      $product->description = 'АПОКАЛИПСИС
+
+Это вино – виртуозная смесь греческого фракийского сорта Мавроуди и сорта Мерло.Из винограда высокого качества,хорошо созревшего. Урожай собирается рано утром и перевозка в винодельню происходит ровно через час после сбора.
+
+Применение классической красной винификации с длительной экстракцией происходит по следующим шагам: сбор урожая винограда, дестабилизация и дробление без давления. Таким образом мы достигаем превосходного качества вина, которое вы видите, и вы можете им насладиться. Температура алкогольной ферментации строго контролируется на уровне 26 градусов и производится в автоматических виноделах по 5 тонн и происходит ферментация в дубовых бочках.';
+
+      $product->type_id = 1;
+      $product->save();
+      $product->categories()->sync([1,8]);
+      //------------------------------------
+
 
       // $product = new Product;
       //
@@ -996,22 +998,22 @@ Bei 12-14 °C wird er ideal mit Schokoladentorten oder roten Obstkuchen kombinie
       //
       // $product->box = 1;
       // $product->palette = 68;
-      // $product->categories()->sync(4);
+      // $product->categories()->sync([4]);
       // $product->type_id = 1;
       // $product->save();
 
-      app()->setLocale('de');
-
-      $product->title = 'Mixed cheese';
-      $product->slug = 'mixcheese';
-      $product->image = 'mixcheese.png';
-      $product->description = 'Παράγεται από 100 % φρέσκο Ελληνικό αγελαδινό και αιγοπρόβειο γάλα όπου συλλέγεται την περιοχή της Θράκης. Πρωτότυπη συνταγή με ιδιαίτερες γεύσης λόγο της προσθήκης πρόβειου και κατσικίσιου γάλακτος που ικανοποιεί μεγάλο εύρος καταναλωτικού κοινού λόγω της ήπιας αλλά ευχάριστης γεύσης του αλλά και της προσιτής τιμής του.';
-
-      $product->box = 1;
-      $product->palette = 79;
-      $product->categories()->sync(5);
-      $product->type_id = 1;
-      $product->save();
+      // app()->setLocale('de');
+      //
+      // $product->title = 'Mixed cheese';
+      // $product->slug = 'mixcheese';
+      // $product->image = 'mixcheese.png';
+      // $product->description = 'Παράγεται από 100 % φρέσκο Ελληνικό αγελαδινό και αιγοπρόβειο γάλα όπου συλλέγεται την περιοχή της Θράκης. Πρωτότυπη συνταγή με ιδιαίτερες γεύσης λόγο της προσθήκης πρόβειου και κατσικίσιου γάλακτος που ικανοποιεί μεγάλο εύρος καταναλωτικού κοινού λόγω της ήπιας αλλά ευχάριστης γεύσης του αλλά και της προσιτής τιμής του.';
+      //
+      // $product->box = 1;
+      // $product->palette = 79;
+      // $product->type_id = 1;
+      // $product->save();
+      // $product->categories()->sync([5]);
 
       // app()->setLocale('ru');
       //
