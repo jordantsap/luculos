@@ -1,15 +1,8 @@
 @extends('layouts.public')
 
-<<<<<<< HEAD
 @section('title', __('categoriestitle'))
 @section('description', $product->categories->title . __('categoriesdescription'))
 @section('keywords', $product->categories->title . ' ' . __('categorieskeywords'))
-=======
-@section('title', __('catproducts_title'))
-@section('meta_description', $product->categories->title . __('catproducts_description'))
-@section('meta_keywords', $product->categories->title . ' ' . __('catproducts_keywords'))
->>>>>>> 9ac96d51841a949701b2e7b7d983ee89056d8b95
-
 
 @section('content')
 

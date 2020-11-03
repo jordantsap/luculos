@@ -1,9 +1,9 @@
 <div id="header-container">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
-            <div class="mx-auto">
+            <div class="col-sm-2 offset-sm-5 col-md-4 offset-md-4">
                 <a href="{{ route('homepage') }}">
-                  <img src="{{ asset('images/logo.png') }}" width="371" height="143" alt="Luculos foods"></a>
+                  <img src="{{ asset('images/logo.png') }}" width="100%" height="133px" alt="Luculos foods"></a>
             </div>
         </div>
 

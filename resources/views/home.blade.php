@@ -7,12 +7,14 @@
 
 
 
-          <div id="home-content">
-              <div class="container w-100 h-auto">
+          <div id="container-fluid">
+              <div class="row-fluid">
 
-                  <a href=" {{ route('products.index')}}">
-                      <img src="{{ asset('images/banner.jpg')}}" width="100%" height="400px" alt="Discover the luculos greek foods">
-                  </a>
+                  <div class="col-sm-12">
+                    <a href=" {{ route('products.index')}}">
+                        <img class="mx-auto"src="{{ asset('images/banner.jpg')}}" width="100%" max-height="350px" alt="Discover the luculos greek foods">
+                    </a>
+                  </div>
               </div>
           </div>
 

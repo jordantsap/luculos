@@ -1,14 +1,8 @@
 @extends('layouts.public')
 
-<<<<<<< HEAD
 @section('title', __('meta.producttitle') . ' ' . $product->title)
 @section('description', $product->title . ' ' . __('meta.productdescription'))
 @section('keywords', $product->title . ' ' . __('meta.productkeywords'))
-=======
-@section('title', __('meta.products_title'))
-@section('description', $product->title . ' ' . __('meta.products_description'))
-@section('keywords', $product->title . ' ' . __('meta.products_keywords'))
->>>>>>> 9ac96d51841a949701b2e7b7d983ee89056d8b95
 
 
 @section('content')
@@ -29,23 +23,20 @@
           </h1>
         </div>
 
-<<<<<<< HEAD
+
 				<div class="col-sm-6 text-center">
 					<img src="{{ asset('images/products/'.$product->image) }}" alt="{{ $product->title }}" width="auto" height="350px">
-=======
-				<div class="col-sm-6">
-					<img src="{{ asset('images/products/'.$product->image) }}" alt="{{ $product->title }}" width="100%" height="350px">
->>>>>>> 9ac96d51841a949701b2e7b7d983ee89056d8b95
+
 				</div>
         <div class="card col-sm-6 my-auto">
           <h2 class="card category-title">
             {{__('page.category')}}
             @foreach ($product->categories as $category)
               <a class="card-body category-title"href="{{route('categories.show', $category->slug)}}">
-                <br> <br>{{ $category->title . ', '}}
+                <br> {{ $category->title}}
               </a>
             @endforeach
-            <div class="card-body col-sm-12 mt-2"> <br>
+            <div class="card-body col-sm-12 mt-2">
               {{__('page.pieces_per_package')}}
               <br>
             </div>

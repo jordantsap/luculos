@@ -20,7 +20,6 @@
                             </a>
                           </li> --}}
 
-                          {{-- <ul class=""> --}}
                               @foreach (config('translatable.locales') as $lang => $language)
                                   @if ($lang != app()->getLocale())
                                       <li class="list-group-item bg-transparent text-dark">
@@ -30,12 +29,8 @@
                                       </li>
                                   @endif
                               @endforeach
-                          {{-- </ul> --}}
+
                       </li>
-                            {{-- <li class="list-group-item bg-transparent text-dark">English</li>
-                            <li class="list-group-item bg-transparent text-dark">Russian</li>
-                            <li class="list-group-item bg-transparent text-dark">German</li>
-                            <li class="list-group-item bg-transparent text-dark">Greek</li> --}}
                         </ul>
                     </div>
                 </div>

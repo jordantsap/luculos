@@ -15,12 +15,8 @@ class ProductController extends Controller
      */
     public function index()
     {
-      $cats = Category::withTranslation()
-      ->where('type_id', 1)->get();
 
-      $products = Product::withTranslation()->where('type_id', 1)->simplePaginate(8);
-
-        return view('products.index', compact('cats', 'products'));
+        return view('products.index');
     }
 
     /**
@@ -136,20 +132,7 @@ class ProductController extends Controller
         $product = Product::find($product->id);
         $product->title = $request->title;
         $product->slug = \Str::slug($request->title, '-');
-        $product->meta_description = $request->input('meta_description');
-        $product->meta_keywords = $request->input('meta_keywords');
-        $product->company_id = $request->company_id;
-        $product->sku = $request->sku;
-        $product->price = $request->price;
-        $product->product_type = $request->product_type;
-        $product->header = $request->header;
-        $product->logo = $request->logo;
         $product->image1 = $request->image1;
-        $product->image2 = $request->image2;
-        $product->image3 = $request->image3;
-        $product->active = $request->active;
-        $product->description = $request->description;
-        $product->user_id = Auth::user()->id;
 
         if ($request->hasFile('header')) {
           //add new photo
@@ -167,6 +150,8 @@ class ProductController extends Controller
           }
 
         $product->save();
+        $products->categories()->sync($request->category);
+
         $notification = array(
         'message' => 'Product updated successfully',
         'alert-type' => 'info'

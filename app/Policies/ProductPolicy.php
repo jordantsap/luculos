@@ -41,7 +41,7 @@ class ProductPolicy
      */
     public function create(User $user)
     {
-        // return $user->id == [1,2];
+        return $user->id == [1,2];
     }
 
     /**

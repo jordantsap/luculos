@@ -37,17 +37,13 @@
 
                 <div class="row col-sm-12">
                   @foreach ($products as $product)
-<<<<<<< HEAD
+
                     <div class="col-sm-4 col-xl-2 text-center">
                        <a href="{{route('products.show', $product->slug)}}">
-                    <img src="{{ asset('images/products/' . $product->image) ? : asset('images.Noimage.jpg')}}" width="100%" height="150px" alt="{{$product->title}}">
+                    <img src="{{ asset('images/products/' . $product->image) ? : asset('images.Noimage.jpg')}}" width="auto" height="80px" alt="{{$product->title}}">
                     <h3 class="product-title text-center"> {{$product->title}} </h3>
-=======
-                    <div class="col-sm-4 col-xl-2">
-                       <a href="{{route('products.show', $product->slug)}}">
-                    <img src="{{ asset('images/products/' . $product->image) ? : asset('images.Noimage.jpg')}}" width="100%" height="150px" alt="{{$product->title}}">
-                    <h3 class="product-title"> {{$product->title}} </h3>
->>>>>>> 9ac96d51841a949701b2e7b7d983ee89056d8b95
+
+
                     </a>
                   </div>
                   @endforeach

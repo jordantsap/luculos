@@ -6,7 +6,6 @@ return [
     'homedescription' => 'Luculos foods.',
     'homekeywords' => 'export foods, luculos, foods.',
 
-<<<<<<< HEAD
     'productstitle' => 'Export products from Greece',
     'productsdescription' => 'Greek products export',
     'productskeywords' => 'export products, products import, greek products export',
@@ -20,7 +19,7 @@ return [
     'catproductsdescription' =>'category and many products to choose',
 
     'catproductskeywords' =>'greek products, category, products, product categories',
-=======
+
     'products_title' => 'Export products from Greece',
     'products_description' => 'Greek products export',
     'products_keywords' => 'export products, products import, greek products export',
@@ -34,12 +33,10 @@ return [
     'visiontitle' => 'Greek companies and products',
     'visiondescription' => 'High quality Greek companies and their products to export',
     'visionkeywords' => 'product export, greek products for export, High quality',
->>>>>>> 9ac96d51841a949701b2e7b7d983ee89056d8b95
 
     'typetitle' => 'Companies and products',
     'typedescription' => 'Greek companies and High quality products to export',
     'typekeywords' => 'High quality product export, greek products for export',
-<<<<<<< HEAD
 
     'categoriestitle' => 'Varius categories for export products',
     'categoriesdescription' => 'Greek companies and High quality products from many categories to export',
@@ -52,6 +49,4 @@ return [
     'visiontitle' => 'We present Greek companies and products',
     'visiondescription' => 'High quality Greek companies and their products to export',
     'visionkeywords' => 'product export, greek products for export, High quality',
-=======
->>>>>>> 9ac96d51841a949701b2e7b7d983ee89056d8b95
 ];

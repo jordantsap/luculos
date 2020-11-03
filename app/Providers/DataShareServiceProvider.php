@@ -38,14 +38,14 @@ class DataShareServiceProvider extends ServiceProvider
 
       });
 
-      //   view()->composer('products.index', function ($view) {
-      //
-      //     $view->with('cats', Category::where('type_id', 1)->get());
-      //
-      //     $view->with('products', Product::where('type_id', 1)->paginate());
-      //
-      //       // return view('products.index', compact('cats', 'products'));
-      //
-      // });
+        view()->composer('products.index', function ($view) {
+
+          $view->with('cats', Category::where('type_id', 1)->get());
+
+          $view->with('products', Product::where('type_id', 1)->paginate(12));
+
+            // return view('products.index', compact('cats', 'products'));
+
+      });
     }
 }
