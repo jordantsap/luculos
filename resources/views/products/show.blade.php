@@ -25,7 +25,7 @@
 
 
 				<div class="col-sm-6 text-center">
-					<img src="{{ asset('images/products/'.$product->image) }}" alt="{{ $product->title }}" width="auto" height="350px">
+					<img src="{{ asset('images/products/'.$product->image) }}" alt="{{ $product->title }}" width="auto" height="220px">
 
 				</div>
         <div class="card col-sm-6 my-auto">
